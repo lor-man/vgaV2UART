@@ -1,0 +1,2 @@
+vhdtdtfi -prj PE6 -o /home/ise/ise_vm/VGARAM/PE6/UART.vhi -module UART -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work TX.vhd -lib work RX.vhd -lib work UART.vhd 
+vhdtdtfi -prj PE6 -o /home/ise/ise_vm/VGARAM/PE6/UART.vhi -module UART -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work TX.vhd -lib work RX.vhd -lib work UART.vhd 

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/ise/ise_vm/VGARAM/PE6/ocupado_rx_isim_beh.exe" -prj "/home/ise/ise_vm/VGARAM/PE6/ocupado_rx_beh.prj" "work.ocupado_rx" 

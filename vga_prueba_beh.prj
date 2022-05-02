@@ -1,0 +1,6 @@
+vhdl work "VGA_sync.vhd"
+vhdl work "rgb.vhd"
+vhdl work "clock25.vhd"
+vhdl work "Generador_magen.vhd"
+vhdl work "vga.vhd"
+vhdl work "vga_prueba.vhd"

@@ -1,0 +1,74 @@
+V3 54
+FL /home/ise/ise_vm/VGARAM/PE6/clk12interno.vhd 2022/05/02.19:18:34 P.20131013
+EN work/clk12interno 1651520065 FL /home/ise/ise_vm/VGARAM/PE6/clk12interno.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/clk12interno/Behavioral 1651520066 \
+      FL /home/ise/ise_vm/VGARAM/PE6/clk12interno.vhd EN work/clk12interno 1651520065
+FL /home/ise/ise_vm/VGARAM/PE6/clock25.vhd 2022/05/02.19:29:16 P.20131013
+EN work/clock25 1651531121 FL /home/ise/ise_vm/VGARAM/PE6/clock25.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/clock25/BEHAVIORAL 1651531122 \
+      FL /home/ise/ise_vm/VGARAM/PE6/clock25.vhd EN work/clock25 1651531121 \
+      CP BUFG CP IBUFG CP DCM_SP
+FL /home/ise/ise_vm/VGARAM/PE6/generador_direccion.vhd 2022/05/02.19:08:05 P.20131013
+EN work/generador_direccion 1651531131 \
+      FL /home/ise/ise_vm/VGARAM/PE6/generador_direccion.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/generador_direccion/Behavioral 1651531132 \
+      FL /home/ise/ise_vm/VGARAM/PE6/generador_direccion.vhd \
+      EN work/generador_direccion 1651531131
+FL /home/ise/ise_vm/VGARAM/PE6/Generador_magen.vhd 2022/05/02.16:07:32 P.20131013
+EN work/Generador_magen 1651531119 \
+      FL /home/ise/ise_vm/VGARAM/PE6/Generador_magen.vhd PB ieee/std_logic_1164 1381692176 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 PB ieee/NUMERIC_STD 1381692181
+AR work/Generador_magen/Behavioral 1651531120 \
+      FL /home/ise/ise_vm/VGARAM/PE6/Generador_magen.vhd EN work/Generador_magen 1651531119
+FL /home/ise/ise_vm/VGARAM/PE6/General.vhd 2022/05/02.22:38:19 P.20131013
+EN work/General 1651531137 FL /home/ise/ise_vm/VGARAM/PE6/General.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/General/Behavioral 1651531138 \
+      FL /home/ise/ise_vm/VGARAM/PE6/General.vhd EN work/General 1651531137 \
+      CP UART CP ram CP generador_direccion CP mux_wr CP vga
+FL /home/ise/ise_vm/VGARAM/PE6/ipcore_dir/ram.vhd 2022/05/02.22:10:42 P.20131013
+EN work/ram 1651531129 FL /home/ise/ise_vm/VGARAM/PE6/ipcore_dir/ram.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/ram/ram_a 1651531130 \
+      FL /home/ise/ise_vm/VGARAM/PE6/ipcore_dir/ram.vhd EN work/ram 1651531129
+FL /home/ise/ise_vm/VGARAM/PE6/mux_wr.vhd 2022/05/02.18:44:28 P.20131013
+EN work/mux_wr 1651531133 FL /home/ise/ise_vm/VGARAM/PE6/mux_wr.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/mux_wr/Behavioral 1651531134 \
+      FL /home/ise/ise_vm/VGARAM/PE6/mux_wr.vhd EN work/mux_wr 1651531133
+FL /home/ise/ise_vm/VGARAM/PE6/rgb.vhd 2022/05/02.00:25:06 P.20131013
+EN work/rgb 1651531117 FL /home/ise/ise_vm/VGARAM/PE6/rgb.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/rgb/Behavioral 1651531118 \
+      FL /home/ise/ise_vm/VGARAM/PE6/rgb.vhd EN work/rgb 1651531117
+FL /home/ise/ise_vm/VGARAM/PE6/RX.vhd 2022/05/02.22:36:25 P.20131013
+EN work/uart_rx 1651531123 FL /home/ise/ise_vm/VGARAM/PE6/RX.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/uart_rx/Behavioral 1651531124 \
+      FL /home/ise/ise_vm/VGARAM/PE6/RX.vhd EN work/uart_rx 1651531123
+FL /home/ise/ise_vm/VGARAM/PE6/TX.vhd 2022/05/01.16:49:12 P.20131013
+EN work/uart_tx 1651531125 FL /home/ise/ise_vm/VGARAM/PE6/TX.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/uart_tx/Behavioral 1651531126 \
+      FL /home/ise/ise_vm/VGARAM/PE6/TX.vhd EN work/uart_tx 1651531125
+FL /home/ise/ise_vm/VGARAM/PE6/UART.vhd 2022/05/02.18:45:37 P.20131013
+EN work/UART 1651531127 FL /home/ise/ise_vm/VGARAM/PE6/UART.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/UART/Behavioral 1651531128 \
+      FL /home/ise/ise_vm/VGARAM/PE6/UART.vhd EN work/UART 1651531127 CP uart_rx \
+      CP uart_tx
+FL /home/ise/ise_vm/VGARAM/PE6/vga.vhd 2022/05/02.18:35:59 P.20131013
+EN work/vga 1651531135 FL /home/ise/ise_vm/VGARAM/PE6/vga.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/vga/Behavioral 1651531136 \
+      FL /home/ise/ise_vm/VGARAM/PE6/vga.vhd EN work/vga 1651531135 CP VGA_sync \
+      CP rgb CP Generador_magen CP clock25
+FL /home/ise/ise_vm/VGARAM/PE6/VGA_sync.vhd 2022/05/02.15:43:40 P.20131013
+EN work/VGA_sync 1651531115 FL /home/ise/ise_vm/VGARAM/PE6/VGA_sync.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/VGA_sync/Behavioral 1651531116 \
+      FL /home/ise/ise_vm/VGARAM/PE6/VGA_sync.vhd EN work/VGA_sync 1651531115

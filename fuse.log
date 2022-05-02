@@ -1,0 +1,63 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -o /home/ise/ise_vm/VGARAM/PE6/ocupado_rx_isim_beh.exe -prj /home/ise/ise_vm/VGARAM/PE6/ocupado_rx_beh.prj work.ocupado_rx 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 1
+Turning on mult-threading, number of parallel sub-compilation jobs: 0 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/ise/ise_vm/VGARAM/PE6/ipcore_dir/ram.vhd" into library work
+Parsing VHDL file "/home/ise/ise_vm/VGARAM/PE6/VGA_sync.vhd" into library work
+Parsing VHDL file "/home/ise/ise_vm/VGARAM/PE6/TX.vhd" into library work
+Parsing VHDL file "/home/ise/ise_vm/VGARAM/PE6/RX.vhd" into library work
+Parsing VHDL file "/home/ise/ise_vm/VGARAM/PE6/rgb.vhd" into library work
+Parsing VHDL file "/home/ise/ise_vm/VGARAM/PE6/clock25.vhd" into library work
+Parsing VHDL file "/home/ise/ise_vm/VGARAM/PE6/Generador_magen.vhd" into library work
+Parsing VHDL file "/home/ise/ise_vm/VGARAM/PE6/vga.vhd" into library work
+Parsing VHDL file "/home/ise/ise_vm/VGARAM/PE6/UART.vhd" into library work
+Parsing VHDL file "/home/ise/ise_vm/VGARAM/PE6/mux_wr.vhd" into library work
+Parsing VHDL file "/home/ise/ise_vm/VGARAM/PE6/generador_direccion.vhd" into library work
+Parsing VHDL file "/home/ise/ise_vm/VGARAM/PE6/General.vhd" into library work
+Parsing VHDL file "/home/ise/ise_vm/VGARAM/PE6/ocupado_rx.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 125320 KB
+Fuse CPU Usage: 1420 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling architecture behavioral of entity uart_rx [\uart_rx(12000000,8,115200,104,5...]
+Compiling architecture behavioral of entity uart_tx [\uart_tx(12000000,8,115200,104)\]
+Compiling architecture behavioral of entity UART [uart_default]
+Compiling package textio
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling package std_logic_textio
+Compiling architecture output_stage_behavioral of entity BLK_MEM_GEN_V7_3_output_stage [\BLK_MEM_GEN_V7_3_output_stage("...]
+Compiling architecture softecc_output_reg_stage_behavioral of entity BLK_MEM_GEN_V7_3_softecc_output_reg_stage [\BLK_MEM_GEN_V7_3_softecc_output...]
+Compiling architecture mem_module_behavioral of entity BLK_MEM_GEN_V7_3_mem_module [\BLK_MEM_GEN_V7_3_mem_module("bl...]
+Compiling architecture behavioral of entity BLK_MEM_GEN_V7_3 [\BLK_MEM_GEN_V7_3("blk_mem_gen_v...]
+Compiling architecture ram_a of entity ram [ram_default]
+Compiling architecture behavioral of entity generador_direccion [generador_direccion_default]
+Compiling architecture behavioral of entity mux_wr [mux_wr_default]
+Compiling package vcomponents
+Compiling architecture behavioral of entity VGA_sync [\VGA_sync(96,144,784,800,2,31,51...]
+Compiling architecture behavioral of entity rgb [rgb_default]
+Compiling architecture behavioral of entity Generador_magen [\Generador_magen(('0','0','0','1...]
+Compiling package vital_timing
+Compiling package vital_primitives
+Compiling package vpkg
+Compiling architecture bufg_v of entity BUFG [bufg_default]
+Compiling architecture ibufg_v of entity IBUFG [\IBUFG("DONT_CARE","0",true,"DEF...]
+Compiling architecture dcm_sp_clock_divide_by_2_v of entity dcm_sp_clock_divide_by_2 [dcm_sp_clock_divide_by_2_default]
+Compiling architecture dcm_sp_maximum_period_check_v of entity dcm_sp_maximum_period_check [\dcm_sp_maximum_period_check("*"...]
+Compiling architecture dcm_sp_maximum_period_check_v of entity dcm_sp_maximum_period_check [\dcm_sp_maximum_period_check("*"...]
+Compiling architecture dcm_sp_clock_lost_v of entity dcm_sp_clock_lost [dcm_sp_clock_lost_default]
+Compiling architecture dcm_sp_v of entity DCM_SP [\DCM_SP(true,"*",true,false,2.0,...]
+Compiling architecture behavioral of entity clock25 [clock25_default]
+Compiling architecture behavioral of entity vga [vga_default]
+Compiling architecture behavioral of entity General [general_default]
+Compiling architecture behavior of entity ocupado_rx
+Time Resolution for simulation is 1ps.
+Compiled 58 VHDL Units
+Built simulation executable /home/ise/ise_vm/VGARAM/PE6/ocupado_rx_isim_beh.exe
+Fuse Memory Usage: 160748 KB
+Fuse CPU Usage: 2030 ms
+GCC CPU Usage: 2510 ms

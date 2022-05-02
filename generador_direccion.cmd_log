@@ -1,0 +1,4 @@
+vhdtdtfi -prj PE6 -o /home/ise/ise_vm/VGARAM/PE6/generador_direccion.vhi -module generador_direccion -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work generador_direccion.vhd 
+vhdtdtfi -lib work generador_direccion.vhd -prj PE6 -o generador_direccion.spl -module generador_direccion -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a generador_direccion.spl /home/ise/ise_vm/VGARAM/PE6/generador_direccion.sym 
+vhdtdtfi -prj PE6 -o /home/ise/ise_vm/VGARAM/PE6/generador_direccion.vhi -module generador_direccion -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work generador_direccion.vhd 

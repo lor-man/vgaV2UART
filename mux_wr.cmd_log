@@ -1,0 +1,1 @@
+vhdtdtfi -prj PE6 -o /home/ise/ise_vm/VGARAM/PE6/mux_wr.vhi -module mux_wr -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work mux_wr.vhd 

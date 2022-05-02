@@ -1,0 +1,1 @@
+vhdtdtfi -prj PE6 -o /home/ise/ise_vm/VGARAM/PE6/clk12interno.vhi -module clk12interno -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work clk12interno.vhd 
