@@ -12,27 +12,27 @@
          <ClosedNode>/vga - Behavioral |home|ise|ise_vm|VGARAM|PE6|vga.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>elbertv2.ucf (/home/ise/ise_vm/VGARAM/PE6/elbertv2.ucf)</SelectedItem>
+         <SelectedItem>General - Behavioral (/home/ise/ise_vm/VGARAM/PE6/General.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000028d000000020000000000000000000000000200000064ffffffff0000008100000003000000020000028d0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>elbertv2.ucf (/home/ise/ise_vm/VGARAM/PE6/elbertv2.ucf)</CurrentItem>
+      <CurrentItem>General - Behavioral (/home/ise/ise_vm/VGARAM/PE6/General.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
-         <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>Design Utilities</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000014d000000010000000100000000000000000000000064ffffffff0000008100000000000000010000014d0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>Design Utilities</CurrentItem>
    </ItemView>
    <ItemView guiview="File" >
       <ClosedNodes>
@@ -41,7 +41,7 @@
       <SelectedItems/>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000390000000040101000100000000000000000000000064ffffffff000000810000000000000004000000510000000100000000000000290000000100000000000000840000000100000000000002920000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000000000000001000000000000000000000000000000000000027b000000040101000100000000000000000000000064ffffffff0000008100000000000000040000005100000001000000000000002900000001000000000000008400000001000000000000017d0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>clock25.xaw</CurrentItem>
    </ItemView>
@@ -61,19 +61,20 @@
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
          <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Design Utilities</ClosedNode>
          <ClosedNode>Implement Design</ClosedNode>
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
          <SelectedItem>Generate Programming File</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >3</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000013e000000010000000100000000000000000000000064ffffffff0000008100000000000000010000013e0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000014d000000010000000100000000000000000000000064ffffffff0000008100000000000000010000014d0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>Generate Programming File</CurrentItem>
    </ItemView>
-   <SourceProcessView>000000ff00000000000000020000014c0000011d01000000060100000002</SourceProcessView>
+   <SourceProcessView>000000ff0000000000000002000001430000011801000000060100000002</SourceProcessView>
    <CurrentView>Implementation</CurrentView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_XAW" guiview="Process" >
       <ClosedNodes>
@@ -96,20 +97,23 @@
          <ClosedNode>/contador_mem_prueba - behavior |home|ise|ise_vm|VGARAM|PE6|contador_mem_prueba.vhd</ClosedNode>
          <ClosedNode>/gen_simulacion - behavior |home|ise|ise_vm|VGARAM|PE6|gen_simulacion.vhd</ClosedNode>
          <ClosedNode>/general_prueba - behavior |home|ise|ise_vm|VGARAM|PE6|general_prueba.vhd</ClosedNode>
+         <ClosedNode>/ocupado_rx - behavior |home|ise|ise_vm|VGARAM|PE6|ocupado_rx.vhd</ClosedNode>
          <ClosedNode>/ocupado_rx - behavior |home|ise|ise_vm|VGARAM|PE6|ocupado_rx.vhd/uut - General - Behavioral/Inst_vga - vga - Behavioral</ClosedNode>
          <ClosedNode>/prueba_ram_ip - behavior |home|ise|ise_vm|VGARAM|PE6|prueba_ram_ip.vhd</ClosedNode>
          <ClosedNode>/sync_prueba - behavior |home|ise|ise_vm|VGARAM|PE6|sync_prueba.vhd</ClosedNode>
          <ClosedNode>/uart_prueba - behavior |home|ise|ise_vm|VGARAM|PE6|uart_prueba.vhd</ClosedNode>
+         <ClosedNode>/uart_prueba - behavior |home|ise|ise_vm|VGARAM|PE6|uart_prueba.vhd/uut - UART - Behavioral</ClosedNode>
+         <ClosedNode>/uart_prueba000 - behavior |home|ise|ise_vm|VGARAM|PE6|uart_prueba000.vhd</ClosedNode>
          <ClosedNode>/vga_prueba - behavior |home|ise|ise_vm|VGARAM|PE6|vga_prueba.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>ocupado_rx - behavior (/home/ise/ise_vm/VGARAM/PE6/ocupado_rx.vhd)</SelectedItem>
+         <SelectedItem>contador_mem_prueba_2 - behavior (/home/ise/ise_vm/VGARAM/PE6/contador_mem_prueba_2.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000002a1000000020000000000000000000000000200000064ffffffff000000810000000300000002000002a10000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001ff000000020000000000000000000000000200000064ffffffff000000810000000300000002000001ff0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>ocupado_rx - behavior (/home/ise/ise_vm/VGARAM/PE6/ocupado_rx.vhd)</CurrentItem>
+      <CurrentItem>contador_mem_prueba_2 - behavior (/home/ise/ise_vm/VGARAM/PE6/contador_mem_prueba_2.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -130,26 +134,26 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>Simulate Behavioral Model</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000014d000000010000000100000000000000000000000064ffffffff0000008100000000000000010000014d0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>Simulate Behavioral Model</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_XCO" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>CORE Generator</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000014d000000010000000100000000000000000000000064ffffffff0000008100000000000000010000014d0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>CORE Generator</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="DESUT_XCO" guiview="Process" >
       <ClosedNodes>

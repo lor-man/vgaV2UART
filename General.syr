@@ -119,7 +119,8 @@ Architecture behavioral of Entity generador_magen is up to date.
 Compiling vhdl file "/home/ise/ise_vm/VGARAM/PE6/clock25.vhd" in Library work.
 Architecture behavioral of Entity clock25 is up to date.
 Compiling vhdl file "/home/ise/ise_vm/VGARAM/PE6/RX.vhd" in Library work.
-Architecture behavioral of Entity uart_rx is up to date.
+Entity <uart_rx> compiled.
+Entity <uart_rx> (Architecture <behavioral>) compiled.
 Compiling vhdl file "/home/ise/ise_vm/VGARAM/PE6/TX.vhd" in Library work.
 Architecture behavioral of Entity uart_tx is up to date.
 Compiling vhdl file "/home/ise/ise_vm/VGARAM/PE6/UART.vhd" in Library work.
@@ -142,7 +143,9 @@ Analyzing hierarchy for entity <General> in library <work> (architecture <behavi
 
 Analyzing hierarchy for entity <UART> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <generador_direccion> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <generador_direccion> in library <work> (architecture <behavioral>) with generics.
+	tiempo_bit = 104
+	tiempo_mbit = 52
 
 Analyzing hierarchy for entity <mux_wr> in library <work> (architecture <behavioral>).
 
@@ -184,7 +187,7 @@ Analyzing hierarchy for entity <clock25> in library <work> (architecture <behavi
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing Entity <General> in library <work> (Architecture <behavioral>).
-WARNING:Xst:2211 - "/home/ise/ise_vm/VGARAM/PE6/General.vhd" line 112: Instantiating black box module <ram>.
+WARNING:Xst:2211 - "/home/ise/ise_vm/VGARAM/PE6/General.vhd" line 113: Instantiating black box module <ram>.
 Entity <General> analyzed. Unit <General> generated.
 
 Analyzing Entity <UART> in library <work> (Architecture <behavioral>).
@@ -205,7 +208,9 @@ Analyzing generic Entity <uart_tx> in library <work> (Architecture <behavioral>)
 	tiempo_bit = 104
 Entity <uart_tx> analyzed. Unit <uart_tx> generated.
 
-Analyzing Entity <generador_direccion> in library <work> (Architecture <behavioral>).
+Analyzing generic Entity <generador_direccion> in library <work> (Architecture <behavioral>).
+	tiempo_bit = 104
+	tiempo_mbit = 52
 Entity <generador_direccion> analyzed. Unit <generador_direccion> generated.
 
 Analyzing Entity <mux_wr> in library <work> (Architecture <behavioral>).
@@ -264,11 +269,17 @@ Performing bidirectional port resolution...
 
 Synthesizing Unit <generador_direccion>.
     Related source file is "/home/ise/ise_vm/VGARAM/PE6/generador_direccion.vhd".
-    Found 1-bit register for signal <escritura>.
+WARNING:Xst:1780 - Signal <contador_mem2> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit register for signal <escritura<0>>.
+    Found 12-bit register for signal <addr_ram>.
+    Found 7-bit up counter for signal <cntbit>.
     Found 12-bit up counter for signal <contador_mem>.
+    Found 7-bit comparator greatequal for signal <escritura_0$cmp_ge0000> created at line 57.
+    Found 7-bit comparator less for signal <escritura_0$cmp_lt0000> created at line 56.
     Summary:
-	inferred   1 Counter(s).
-	inferred   1 D-type flip-flop(s).
+	inferred   2 Counter(s).
+	inferred  13 D-type flip-flop(s).
+	inferred   2 Comparator(s).
 Unit <generador_direccion> synthesized.
 
 
@@ -284,7 +295,7 @@ Synthesizing Unit <uart_rx>.
     | States             | 4                                              |
     | Transitions        | 11                                             |
     | Inputs             | 4                                              |
-    | Outputs            | 5                                              |
+    | Outputs            | 4                                              |
     | Clock              | Clk                       (rising_edge)        |
     | Power Up State     | idle                                           |
     | Encoding           | automatic                                      |
@@ -379,7 +390,6 @@ Unit <Generador_magen> synthesized.
 
 Synthesizing Unit <UART>.
     Related source file is "/home/ise/ise_vm/VGARAM/PE6/UART.vhd".
-WARNING:Xst:1780 - Signal <loopRXTX> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 Unit <UART> synthesized.
 
 
@@ -409,20 +419,22 @@ Macro Statistics
  3-bit adder                                           : 2
  4-bit adder                                           : 2
  7-bit adder                                           : 2
-# Counters                                             : 3
+# Counters                                             : 4
  12-bit up counter                                     : 1
  6-bit up counter                                      : 1
- 7-bit up counter                                      : 1
-# Registers                                            : 27
+ 7-bit up counter                                      : 2
+# Registers                                            : 28
  1-bit register                                        : 17
  10-bit register                                       : 2
+ 12-bit register                                       : 1
  3-bit register                                        : 2
  4-bit register                                        : 2
  7-bit register                                        : 2
  8-bit register                                        : 2
-# Comparators                                          : 5
+# Comparators                                          : 7
  3-bit comparator less                                 : 2
- 7-bit comparator less                                 : 3
+ 7-bit comparator greatequal                           : 1
+ 7-bit comparator less                                 : 4
 
 =========================================================================
 
@@ -464,15 +476,16 @@ Macro Statistics
  3-bit adder                                           : 2
  4-bit adder                                           : 2
  7-bit adder                                           : 2
-# Counters                                             : 3
+# Counters                                             : 4
  12-bit up counter                                     : 1
  6-bit up counter                                      : 1
- 7-bit up counter                                      : 1
-# Registers                                            : 81
- Flip-Flops                                            : 81
-# Comparators                                          : 5
+ 7-bit up counter                                      : 2
+# Registers                                            : 93
+ Flip-Flops                                            : 93
+# Comparators                                          : 7
  3-bit comparator less                                 : 2
- 7-bit comparator less                                 : 3
+ 7-bit comparator greatequal                           : 1
+ 7-bit comparator less                                 : 4
 
 =========================================================================
 
@@ -482,6 +495,8 @@ Macro Statistics
 
 Optimizing unit <General> ...
 
+Optimizing unit <generador_direccion> ...
+
 Optimizing unit <uart_rx> ...
 
 Optimizing unit <uart_tx> ...
@@ -490,7 +505,7 @@ Optimizing unit <VGA_sync> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block General, actual ratio is 18.
+Found area constraint ratio of 100 (+ 5) on block General, actual ratio is 20.
 
 Final Macro Processing ...
 
@@ -498,8 +513,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 110
- Flip-Flops                                            : 110
+# Registers                                            : 129
+ Flip-Flops                                            : 129
 
 =========================================================================
 
@@ -525,39 +540,38 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : No
 
 Design Statistics
-# IOs                              : 25
+# IOs                              : 24
 
 Cell Usage :
-# BELS                             : 306
+# BELS                             : 331
 #      GND                         : 2
-#      INV                         : 5
+#      INV                         : 7
 #      LUT1                        : 29
 #      LUT2                        : 39
-#      LUT3                        : 56
-#      LUT3_L                      : 4
-#      LUT4                        : 91
-#      LUT4_D                      : 3
+#      LUT3                        : 63
+#      LUT4                        : 110
+#      LUT4_D                      : 2
 #      LUT4_L                      : 3
 #      MUXCY                       : 29
-#      MUXF5                       : 11
+#      MUXF5                       : 13
 #      VCC                         : 2
 #      XORCY                       : 32
-# FlipFlops/Latches                : 110
-#      FD                          : 39
+# FlipFlops/Latches                : 129
+#      FD                          : 56
 #      FD_1                        : 13
-#      FDE                         : 16
-#      FDR                         : 28
+#      FDE                         : 8
+#      FDR                         : 35
 #      FDR_1                       : 1
-#      FDS                         : 10
+#      FDS                         : 13
 #      FDS_1                       : 3
 # RAMS                             : 2
 #      RAMB16BWE                   : 2
-# Clock Buffers                    : 2
-#      BUFG                        : 2
-# IO Buffers                       : 25
+# Clock Buffers                    : 3
+#      BUFG                        : 3
+# IO Buffers                       : 24
 #      IBUF                        : 10
 #      IBUFG                       : 1
-#      OBUF                        : 14
+#      OBUF                        : 13
 # DCMs                             : 1
 #      DCM_SP                      : 1
 =========================================================================
@@ -567,13 +581,13 @@ Device utilization summary:
 
 Selected Device : 3s50atq144-5 
 
- Number of Slices:                      123  out of    704    17%  
- Number of Slice Flip Flops:            110  out of   1408     7%  
- Number of 4 input LUTs:                230  out of   1408    16%  
- Number of IOs:                          25
- Number of bonded IOBs:                  25  out of    108    23%  
+ Number of Slices:                      133  out of    704    18%  
+ Number of Slice Flip Flops:            129  out of   1408     9%  
+ Number of 4 input LUTs:                253  out of   1408    17%  
+ Number of IOs:                          24
+ Number of bonded IOBs:                  24  out of    108    22%  
  Number of BRAMs:                         2  out of      3    66%  
- Number of GCLKs:                         2  out of     24     8%  
+ Number of GCLKs:                         3  out of     24    12%  
  Number of DCMs:                          1  out of      2    50%  
 
 ---------------------------
@@ -594,17 +608,17 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
-----------------------------------------+---------------------------------------------------------------------------------------------------------------------+-------+
-Clock Signal                            | Clock buffer(FF name)                                                                                               | Load  |
-----------------------------------------+---------------------------------------------------------------------------------------------------------------------+-------+
-clk_g                                   | Inst_vga/Inst_clock25/DCM_SP_INST:CLK0                                                                              | 52    |
-ram0/N1                                 | NONE(ram0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3a_init.ram/dpram.ram)| 2     |
-Inst_UART/Inst_uart_rx/ocupado_bandera_0| NONE(Inst_generador_direccion/escritura)                                                                            | 13    |
-Inst_vga/Inst_VGA_sync/clk_2            | NONE(Inst_vga/Inst_VGA_sync/columna_cnt_6)                                                                          | 7     |
-Inst_vga/Inst_VGA_sync/clk_3            | NONE(Inst_vga/Inst_VGA_sync/fila_cnt_5)                                                                             | 6     |
-Inst_vga/Inst_VGA_sync/h_sync           | NONE(Inst_vga/Inst_VGA_sync/clk_3_cnt_3)                                                                            | 17    |
-clk_g                                   | Inst_vga/Inst_clock25/DCM_SP_INST:CLKFX                                                                             | 17    |
-----------------------------------------+---------------------------------------------------------------------------------------------------------------------+-------+
+-----------------------------------------+---------------------------------------------------------------------------------------------------------------------+-------+
+Clock Signal                             | Clock buffer(FF name)                                                                                               | Load  |
+-----------------------------------------+---------------------------------------------------------------------------------------------------------------------+-------+
+clk_g                                    | Inst_vga/Inst_clock25/DCM_SP_INST:CLK0                                                                              | 60    |
+ram0/N1                                  | NONE(ram0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3a_init.ram/dpram.ram)| 2     |
+Inst_UART/Inst_uart_rx/ocupado_bandera_01| BUFG                                                                                                                | 24    |
+Inst_vga/Inst_VGA_sync/clk_2             | NONE(Inst_vga/Inst_VGA_sync/columna_cnt_6)                                                                          | 7     |
+Inst_vga/Inst_VGA_sync/clk_3             | NONE(Inst_vga/Inst_VGA_sync/fila_cnt_5)                                                                             | 6     |
+Inst_vga/Inst_VGA_sync/h_sync            | NONE(Inst_vga/Inst_VGA_sync/clk_3_cnt_3)                                                                            | 17    |
+clk_g                                    | Inst_vga/Inst_clock25/DCM_SP_INST:CLKFX                                                                             | 17    |
+-----------------------------------------+---------------------------------------------------------------------------------------------------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
 Asynchronous Control Signals Information:
@@ -616,7 +630,7 @@ Timing Summary:
 Speed Grade: -5
 
    Minimum period: 9.931ns (Maximum Frequency: 100.690MHz)
-   Minimum input arrival time before clock: 4.763ns
+   Minimum input arrival time before clock: 4.307ns
    Maximum output required time after clock: 7.801ns
    Maximum combinational path delay: 5.721ns
 
@@ -627,7 +641,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk_g'
   Clock period: 9.931ns (frequency: 100.690MHz)
-  Total number of paths / destination ports: 1231 / 126
+  Total number of paths / destination ports: 1488 / 136
 -------------------------------------------------------------------------
 Delay:               4.767ns (Levels of Logic = 4)
   Source:            Inst_vga/Inst_VGA_sync/h_count_3 (FF)
@@ -640,7 +654,7 @@ Delay:               4.767ns (Levels of Logic = 4)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FD:C->Q               4   0.495   0.607  Inst_vga/Inst_VGA_sync/h_count_3 (Inst_vga/Inst_VGA_sync/h_count_3)
-     LUT4_L:I0->LO         1   0.561   0.102  Inst_vga/Inst_VGA_sync/h_sync_and0000_SW0 (N54)
+     LUT4_L:I0->LO         1   0.561   0.102  Inst_vga/Inst_VGA_sync/h_sync_and0000_SW0 (N58)
      LUT4:I3->O            3   0.561   0.453  Inst_vga/Inst_VGA_sync/h_sync_and0000 (Inst_vga/Inst_VGA_sync/h_sync_and0000)
      LUT4_D:I3->O          7   0.561   0.668  Inst_vga/Inst_VGA_sync/h_count_mux0002<0>11 (Inst_vga/Inst_VGA_sync/N11)
      LUT2:I1->O            1   0.562   0.000  Inst_vga/Inst_VGA_sync/h_count_mux0002<8>1 (Inst_vga/Inst_VGA_sync/h_count_mux0002<8>)
@@ -650,27 +664,27 @@ Delay:               4.767ns (Levels of Logic = 4)
                                        (61.6% logic, 38.4% route)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'Inst_UART/Inst_uart_rx/ocupado_bandera_0'
-  Clock period: 3.912ns (frequency: 255.630MHz)
-  Total number of paths / destination ports: 234 / 25
+Timing constraint: Default period analysis for Clock 'Inst_UART/Inst_uart_rx/ocupado_bandera_01'
+  Clock period: 3.893ns (frequency: 256.858MHz)
+  Total number of paths / destination ports: 234 / 36
 -------------------------------------------------------------------------
-Delay:               3.912ns (Levels of Logic = 2)
-  Source:            Inst_generador_direccion/contador_mem_11 (FF)
-  Destination:       Inst_generador_direccion/escritura (FF)
-  Source Clock:      Inst_UART/Inst_uart_rx/ocupado_bandera_0 rising
-  Destination Clock: Inst_UART/Inst_uart_rx/ocupado_bandera_0 rising
+Delay:               3.893ns (Levels of Logic = 2)
+  Source:            Inst_generador_direccion/contador_mem_9 (FF)
+  Destination:       Inst_generador_direccion/contador_mem_11 (FF)
+  Source Clock:      Inst_UART/Inst_uart_rx/ocupado_bandera_01 rising
+  Destination Clock: Inst_UART/Inst_uart_rx/ocupado_bandera_01 rising
 
-  Data Path: Inst_generador_direccion/contador_mem_11 to Inst_generador_direccion/escritura
+  Data Path: Inst_generador_direccion/contador_mem_9 to Inst_generador_direccion/contador_mem_11
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              3   0.495   0.559  Inst_generador_direccion/contador_mem_11 (Inst_generador_direccion/contador_mem_11)
-     LUT4:I0->O            1   0.561   0.465  Inst_generador_direccion/escritura_cmp_eq00007 (Inst_generador_direccion/escritura_cmp_eq00007)
-     LUT3:I0->O           13   0.561   0.836  Inst_generador_direccion/escritura_cmp_eq000026 (Inst_generador_direccion/escritura_cmp_eq0000)
-     FDR:R                     0.435          Inst_generador_direccion/escritura
+     FDR:C->Q              3   0.495   0.559  Inst_generador_direccion/contador_mem_9 (Inst_generador_direccion/contador_mem_9)
+     LUT4:I0->O            1   0.561   0.465  Inst_generador_direccion/contador_mem_cmp_eq00007 (Inst_generador_direccion/contador_mem_cmp_eq00007)
+     LUT3:I0->O           12   0.561   0.817  Inst_generador_direccion/contador_mem_cmp_eq000026 (Inst_generador_direccion/contador_mem_cmp_eq0000)
+     FDR:R                     0.435          Inst_generador_direccion/contador_mem_0
     ----------------------------------------
-    Total                      3.912ns (2.052ns logic, 1.860ns route)
-                                       (52.5% logic, 47.5% route)
+    Total                      3.893ns (2.052ns logic, 1.841ns route)
+                                       (52.7% logic, 47.3% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'Inst_vga/Inst_VGA_sync/clk_2'
@@ -735,7 +749,7 @@ Delay:               5.140ns (Levels of Logic = 4)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FD_1:C->Q             4   0.495   0.607  Inst_vga/Inst_VGA_sync/v_count_5 (Inst_vga/Inst_VGA_sync/v_count_5)
-     LUT4:I0->O            1   0.561   0.359  Inst_vga/Inst_VGA_sync/v_count_and0000_SW0 (N14)
+     LUT4:I0->O            1   0.561   0.359  Inst_vga/Inst_VGA_sync/v_count_and0000_SW0 (N11)
      LUT4:I3->O            3   0.561   0.474  Inst_vga/Inst_VGA_sync/v_count_and0000 (Inst_vga/Inst_VGA_sync/v_count_and0000)
      LUT4:I2->O            9   0.561   0.763  Inst_vga/Inst_VGA_sync/v_count_mux0002<0>11 (Inst_vga/Inst_VGA_sync/N01)
      LUT2:I1->O            1   0.562   0.000  Inst_vga/Inst_VGA_sync/v_count_mux0002<9>1 (Inst_vga/Inst_VGA_sync/v_count_mux0002<9>)
@@ -746,9 +760,9 @@ Delay:               5.140ns (Levels of Logic = 4)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_g'
-  Total number of paths / destination ports: 67 / 41
+  Total number of paths / destination ports: 72 / 46
 -------------------------------------------------------------------------
-Offset:              4.763ns (Levels of Logic = 4)
+Offset:              4.307ns (Levels of Logic = 3)
   Source:            RX_pin (PAD)
   Destination:       Inst_UART/Inst_uart_rx/info_7 (FF)
   Destination Clock: clk_g rising
@@ -757,14 +771,13 @@ Offset:              4.763ns (Levels of Logic = 4)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            11   0.824   0.816  RX_pin_IBUF (RX_pin_IBUF)
-     LUT4:I2->O           12   0.561   0.883  Inst_UART/Inst_uart_rx/info_0_mux0000211 (Inst_UART/Inst_uart_rx/N24)
-     LUT3:I1->O            1   0.562   0.359  Inst_UART/Inst_uart_rx/info_7_mux0000_SW1 (N25)
-     LUT4:I3->O            1   0.561   0.000  Inst_UART/Inst_uart_rx/info_7_mux0000 (Inst_UART/Inst_uart_rx/info_7_mux0000)
-     FD:D                      0.197          Inst_UART/Inst_uart_rx/info_7
+     IBUF:I->O            13   0.824   0.859  RX_pin_IBUF (RX_pin_IBUF)
+     LUT4:I2->O            8   0.561   0.709  Inst_UART/Inst_uart_rx/info_0_mux0000111 (Inst_UART/Inst_uart_rx/N25)
+     LUT3:I1->O            1   0.562   0.357  Inst_UART/Inst_uart_rx/info_7_mux000021 (Inst_UART/Inst_uart_rx/info_7_mux000021)
+     FDS:S                     0.435          Inst_UART/Inst_uart_rx/info_7
     ----------------------------------------
-    Total                      4.763ns (2.705ns logic, 2.058ns route)
-                                       (56.8% logic, 43.2% route)
+    Total                      4.307ns (2.382ns logic, 1.925ns route)
+                                       (55.3% logic, 44.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'Inst_vga/Inst_VGA_sync/h_sync'
@@ -808,25 +821,6 @@ Offset:              7.801ns (Levels of Logic = 3)
                                        (90.6% logic, 9.4% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'Inst_UART/Inst_uart_rx/ocupado_bandera_0'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              5.248ns (Levels of Logic = 1)
-  Source:            Inst_generador_direccion/escritura (FF)
-  Destination:       ocupado_ram (PAD)
-  Source Clock:      Inst_UART/Inst_uart_rx/ocupado_bandera_0 rising
-
-  Data Path: Inst_generador_direccion/escritura to ocupado_ram
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDR:C->Q              1   0.495   0.357  Inst_generador_direccion/escritura (Inst_generador_direccion/escritura)
-     OBUF:I->O                 4.396          ocupado_ram_OBUF (ocupado_ram)
-    ----------------------------------------
-    Total                      5.248ns (4.891ns logic, 0.357ns route)
-                                       (93.2% logic, 6.8% route)
-
-=========================================================================
 Timing constraint: Default path analysis
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
@@ -847,13 +841,13 @@ Delay:               5.721ns (Levels of Logic = 2)
 =========================================================================
 
 
-Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 6.19 secs
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 6.58 secs
  
 --> 
 
 
-Total memory usage is 641200 kilobytes
+Total memory usage is 545104 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    3 (   0 filtered)

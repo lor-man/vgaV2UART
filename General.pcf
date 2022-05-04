@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Mon May 02 22:38:51 2022
+// Written by: Map P.20131013 on Wed May 04 03:47:49 2022
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -11,7 +11,6 @@ COMP "clk_g" LOCATE = SITE "P129" LEVEL 1;
 COMP "green<0>" LOCATE = SITE "P99" LEVEL 1;
 COMP "green<1>" LOCATE = SITE "P101" LEVEL 1;
 COMP "green<2>" LOCATE = SITE "P102" LEVEL 1;
-COMP "ocupado_ram" LOCATE = SITE "P29" LEVEL 1;
 COMP "hsync" LOCATE = SITE "P93" LEVEL 1;
 COMP "TX_pin" LOCATE = SITE "P30" LEVEL 1;
 COMP "datos_enviar<0>" LOCATE = SITE "P58" LEVEL 1;

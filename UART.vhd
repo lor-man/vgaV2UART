@@ -7,7 +7,7 @@ entity UART is
 	port(
 			clk12: in std_logic;
 			TX: out std_logic;
-			RX: in std_logic;
+			RX: in std_logic:='0';
 			habilitar_tx: in std_logic;
 			ocupado_rx: out std_logic_vector(0 downto 0);
 			datos_envio: in std_logic_vector(7 downto 0);
@@ -37,7 +37,7 @@ architecture Behavioral of UART is
 		);
 	END COMPONENT;
 --
-signal loopRXTX: std_logic;-- para prueba se creo un bucle del rx y tx  se debe de eliminar en la implementacion
+--signal loopRXTX: std_logic;-- para prueba se creo un bucle del rx y tx  se debe de eliminar en la implementacion
 
 
 

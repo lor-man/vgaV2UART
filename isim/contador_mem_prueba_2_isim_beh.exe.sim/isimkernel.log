@@ -1,0 +1,10 @@
+Command line:
+   contador_mem_prueba_2_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  36480
+
+Wed May  4 03:34:38 2022
+
+
+ Elaboration Time: 0.04 sec

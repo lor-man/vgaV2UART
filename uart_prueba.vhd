@@ -43,7 +43,7 @@ ARCHITECTURE behavior OF uart_prueba IS
     PORT(
          clk12 : IN  std_logic;
          habilitar_tx : IN  std_logic;
-         ocupado_rx : OUT  std_logic;
+         ocupado_rx : OUT  std_logic_vector (0 downto 0);
          datos_envio : IN  std_logic_vector(7 downto 0);
          datos_recibidos : OUT  std_logic_vector(7 downto 0)
         );
@@ -56,7 +56,7 @@ ARCHITECTURE behavior OF uart_prueba IS
    signal datos_envio : std_logic_vector(7 downto 0) := (others => '0');
 
  	--Outputs
-   signal ocupado_rx : std_logic;
+   signal ocupado_rx : std_logic_vector (0 downto 0 );
    signal datos_recibidos : std_logic_vector(7 downto 0);
 
    -- Clock period definitions

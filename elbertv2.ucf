@@ -112,7 +112,7 @@
     NET "RX_pin"           LOC = P28   | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
     NET "TX_pin"           LOC = P30   | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
 #    NET "IO_P1[4]"           LOC = P27   | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
-    NET "ocupado_ram"           LOC = P29   | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
+#   NET "ocupado_ram"           LOC = P29   | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
 #    NET "IO_P1[6]"           LOC = P24   | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
 #    NET "IO_P1[7]"           LOC = P25   | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
 

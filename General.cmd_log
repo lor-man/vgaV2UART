@@ -20,3 +20,36 @@ map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o General_
 par -w -intstyle ise -ol high -t 1 General_map.ncd General.ncd General.pcf 
 trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml General.twx General.ncd -o General.twr General.pcf -ucf elbertv2.ucf 
 bitgen -intstyle ise -f General.ut General.ncd 
+xst -intstyle ise -ifn "/home/ise/ise_vm/VGARAM/PE6/General.xst" -ofn "/home/ise/ise_vm/VGARAM/PE6/General.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc elbertv2.ucf -p xc3s50a-tq144-5 General.ngc General.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o General_map.ncd General.ngd General.pcf 
+par -w -intstyle ise -ol high -t 1 General_map.ncd General.ncd General.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml General.twx General.ncd -o General.twr General.pcf -ucf elbertv2.ucf 
+bitgen -intstyle ise -f General.ut General.ncd 
+xst -intstyle ise -ifn "/home/ise/ise_vm/VGARAM/PE6/General.xst" -ofn "/home/ise/ise_vm/VGARAM/PE6/General.syr" 
+xst -intstyle ise -ifn "/home/ise/ise_vm/VGARAM/PE6/General.xst" -ofn "/home/ise/ise_vm/VGARAM/PE6/General.syr" 
+xst -intstyle ise -ifn "/home/ise/ise_vm/VGARAM/PE6/General.xst" -ofn "/home/ise/ise_vm/VGARAM/PE6/General.syr" 
+xst -intstyle ise -ifn "/home/ise/ise_vm/VGARAM/PE6/General.xst" -ofn "/home/ise/ise_vm/VGARAM/PE6/General.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc elbertv2.ucf -p xc3s50a-tq144-5 General.ngc General.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o General_map.ncd General.ngd General.pcf 
+par -w -intstyle ise -ol high -t 1 General_map.ncd General.ncd General.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml General.twx General.ncd -o General.twr General.pcf -ucf elbertv2.ucf 
+bitgen -intstyle ise -f General.ut General.ncd 
+xst -intstyle ise -ifn "/home/ise/ise_vm/VGARAM/PE6/General.xst" -ofn "/home/ise/ise_vm/VGARAM/PE6/General.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc elbertv2.ucf -p xc3s50a-tq144-5 General.ngc General.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o General_map.ncd General.ngd General.pcf 
+par -w -intstyle ise -ol high -t 1 General_map.ncd General.ncd General.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml General.twx General.ncd -o General.twr General.pcf -ucf elbertv2.ucf 
+bitgen -intstyle ise -f General.ut General.ncd 
+xst -intstyle ise -ifn "/home/ise/ise_vm/VGARAM/PE6/General.xst" -ofn "/home/ise/ise_vm/VGARAM/PE6/General.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc elbertv2.ucf -p xc3s50a-tq144-5 General.ngc General.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o General_map.ncd General.ngd General.pcf 
+par -w -intstyle ise -ol high -t 1 General_map.ncd General.ncd General.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml General.twx General.ncd -o General.twr General.pcf -ucf elbertv2.ucf 
+bitgen -intstyle ise -f General.ut General.ncd 
+xst -intstyle ise -ifn "/home/ise/ise_vm/VGARAM/PE6/General.xst" -ofn "/home/ise/ise_vm/VGARAM/PE6/General.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc elbertv2.ucf -p xc3s50a-tq144-5 General.ngc General.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o General_map.ncd General.ngd General.pcf 
+par -w -intstyle ise -ol high -t 1 General_map.ncd General.ncd General.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml General.twx General.ncd -o General.twr General.pcf -ucf elbertv2.ucf 
+bitgen -intstyle ise -f General.ut General.ncd 

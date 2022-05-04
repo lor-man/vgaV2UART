@@ -79,122 +79,184 @@ For more information, see Period Analysis in the Timing Closure User Guide (UG61
 
  238 paths analyzed, 50 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is   5.411ns.
+ Minimum period is   5.021ns.
 --------------------------------------------------------------------------------
 
-Paths for end point Inst_vga/Inst_VGA_sync/h_count_4 (SLICE_X0Y28.G1), 10 paths
+Paths for end point Inst_vga/Inst_VGA_sync/h_count_2 (SLICE_X16Y30.G1), 10 paths
 --------------------------------------------------------------------------------
-Slack (setup path):     34.589ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_vga/Inst_VGA_sync/h_count_5 (FF)
-  Destination:          Inst_vga/Inst_VGA_sync/h_count_4 (FF)
+Slack (setup path):     34.979ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_vga/Inst_VGA_sync/h_count_7 (FF)
+  Destination:          Inst_vga/Inst_VGA_sync/h_count_2 (FF)
   Requirement:          40.000ns
-  Data Path Delay:      5.384ns (Levels of Logic = 4)
-  Clock Path Skew:      -0.027ns (0.257 - 0.284)
+  Data Path Delay:      5.030ns (Levels of Logic = 3)
+  Clock Path Skew:      0.009ns (0.046 - 0.037)
   Source Clock:         Inst_vga/clk25_s rising at 0.000ns
   Destination Clock:    Inst_vga/clk25_s rising at 40.000ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: Inst_vga/Inst_VGA_sync/h_count_5 to Inst_vga/Inst_VGA_sync/h_count_4
+  Maximum Data Path: Inst_vga/Inst_VGA_sync/h_count_7 to Inst_vga/Inst_VGA_sync/h_count_2
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X5Y27.XQ       Tcko                  0.495   Inst_vga/Inst_VGA_sync/h_count<5>
-                                                       Inst_vga/Inst_VGA_sync/h_count_5
-    SLICE_X2Y27.G2       net (fanout=4)        1.274   Inst_vga/Inst_VGA_sync/h_count<5>
-    SLICE_X2Y27.Y        Tilo                  0.616   Inst_vga/Inst_VGA_sync/h_sync_and0000
-                                                       Inst_vga/Inst_VGA_sync/h_sync_and0000_SW0
-    SLICE_X2Y27.F3       net (fanout=1)        0.021   Inst_vga/Inst_VGA_sync/h_sync_and0000_SW0/O
-    SLICE_X2Y27.X        Tilo                  0.601   Inst_vga/Inst_VGA_sync/h_sync_and0000
+    SLICE_X16Y24.XQ      Tcko                  0.521   Inst_vga/Inst_VGA_sync/h_count<7>
+                                                       Inst_vga/Inst_VGA_sync/h_count_7
+    SLICE_X16Y27.F1      net (fanout=4)        1.567   Inst_vga/Inst_VGA_sync/h_count<7>
+    SLICE_X16Y27.X       Tilo                  0.601   Inst_vga/Inst_VGA_sync/h_sync_and0000
                                                        Inst_vga/Inst_VGA_sync/h_sync_and0000
-    SLICE_X4Y27.G2       net (fanout=3)        0.429   Inst_vga/Inst_VGA_sync/h_sync_and0000
-    SLICE_X4Y27.Y        Tilo                  0.616   Inst_vga/Inst_VGA_sync/h_count<0>
+    SLICE_X16Y25.G2      net (fanout=3)        0.391   Inst_vga/Inst_VGA_sync/h_sync_and0000
+    SLICE_X16Y25.Y       Tilo                  0.616   Inst_vga/Inst_VGA_sync/h_count<0>
                                                        Inst_vga/Inst_VGA_sync/h_count_mux0002<0>11
-    SLICE_X0Y28.G1       net (fanout=8)        0.661   Inst_vga/Inst_VGA_sync/N11
-    SLICE_X0Y28.CLK      Tgck                  0.671   Inst_vga/Inst_VGA_sync/h_count<4>
-                                                       Inst_vga/Inst_VGA_sync/h_count_mux0002<5>1
-                                                       Inst_vga/Inst_VGA_sync/h_count_4
-    -------------------------------------------------  ---------------------------
-    Total                                      5.384ns (2.999ns logic, 2.385ns route)
-                                                       (55.7% logic, 44.3% route)
-
---------------------------------------------------------------------------------
-Slack (setup path):     35.327ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_vga/Inst_VGA_sync/h_count_2 (FF)
-  Destination:          Inst_vga/Inst_VGA_sync/h_count_4 (FF)
-  Requirement:          40.000ns
-  Data Path Delay:      4.671ns (Levels of Logic = 4)
-  Clock Path Skew:      -0.002ns (0.030 - 0.032)
-  Source Clock:         Inst_vga/clk25_s rising at 0.000ns
-  Destination Clock:    Inst_vga/clk25_s rising at 40.000ns
-  Clock Uncertainty:    0.000ns
-
-  Maximum Data Path: Inst_vga/Inst_VGA_sync/h_count_2 to Inst_vga/Inst_VGA_sync/h_count_4
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X0Y27.YQ       Tcko                  0.596   Inst_vga/Inst_VGA_sync/h_count<3>
+    SLICE_X16Y30.G1      net (fanout=8)        0.663   Inst_vga/Inst_VGA_sync/N11
+    SLICE_X16Y30.CLK     Tgck                  0.671   Inst_vga/Inst_VGA_sync/h_count<3>
+                                                       Inst_vga/Inst_VGA_sync/h_count_mux0002<7>1
                                                        Inst_vga/Inst_VGA_sync/h_count_2
-    SLICE_X2Y27.G3       net (fanout=4)        0.460   Inst_vga/Inst_VGA_sync/h_count<2>
-    SLICE_X2Y27.Y        Tilo                  0.616   Inst_vga/Inst_VGA_sync/h_sync_and0000
-                                                       Inst_vga/Inst_VGA_sync/h_sync_and0000_SW0
-    SLICE_X2Y27.F3       net (fanout=1)        0.021   Inst_vga/Inst_VGA_sync/h_sync_and0000_SW0/O
-    SLICE_X2Y27.X        Tilo                  0.601   Inst_vga/Inst_VGA_sync/h_sync_and0000
-                                                       Inst_vga/Inst_VGA_sync/h_sync_and0000
-    SLICE_X4Y27.G2       net (fanout=3)        0.429   Inst_vga/Inst_VGA_sync/h_sync_and0000
-    SLICE_X4Y27.Y        Tilo                  0.616   Inst_vga/Inst_VGA_sync/h_count<0>
-                                                       Inst_vga/Inst_VGA_sync/h_count_mux0002<0>11
-    SLICE_X0Y28.G1       net (fanout=8)        0.661   Inst_vga/Inst_VGA_sync/N11
-    SLICE_X0Y28.CLK      Tgck                  0.671   Inst_vga/Inst_VGA_sync/h_count<4>
-                                                       Inst_vga/Inst_VGA_sync/h_count_mux0002<5>1
-                                                       Inst_vga/Inst_VGA_sync/h_count_4
     -------------------------------------------------  ---------------------------
-    Total                                      4.671ns (3.100ns logic, 1.571ns route)
-                                                       (66.4% logic, 33.6% route)
+    Total                                      5.030ns (2.409ns logic, 2.621ns route)
+                                                       (47.9% logic, 52.1% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     35.335ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_vga/Inst_VGA_sync/h_count_1 (FF)
-  Destination:          Inst_vga/Inst_VGA_sync/h_count_4 (FF)
+Slack (setup path):     35.268ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_vga/Inst_VGA_sync/h_count_3 (FF)
+  Destination:          Inst_vga/Inst_VGA_sync/h_count_2 (FF)
   Requirement:          40.000ns
-  Data Path Delay:      4.663ns (Levels of Logic = 4)
-  Clock Path Skew:      -0.002ns (0.030 - 0.032)
+  Data Path Delay:      4.732ns (Levels of Logic = 4)
+  Clock Path Skew:      0.000ns
   Source Clock:         Inst_vga/clk25_s rising at 0.000ns
   Destination Clock:    Inst_vga/clk25_s rising at 40.000ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: Inst_vga/Inst_VGA_sync/h_count_1 to Inst_vga/Inst_VGA_sync/h_count_4
+  Maximum Data Path: Inst_vga/Inst_VGA_sync/h_count_3 to Inst_vga/Inst_VGA_sync/h_count_2
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X0Y26.YQ       Tcko                  0.596   Inst_vga/Inst_VGA_sync/h_count<7>
-                                                       Inst_vga/Inst_VGA_sync/h_count_1
-    SLICE_X2Y27.G4       net (fanout=4)        0.452   Inst_vga/Inst_VGA_sync/h_count<1>
-    SLICE_X2Y27.Y        Tilo                  0.616   Inst_vga/Inst_VGA_sync/h_sync_and0000
+    SLICE_X16Y30.XQ      Tcko                  0.521   Inst_vga/Inst_VGA_sync/h_count<3>
+                                                       Inst_vga/Inst_VGA_sync/h_count_3
+    SLICE_X16Y27.G4      net (fanout=4)        0.632   Inst_vga/Inst_VGA_sync/h_count<3>
+    SLICE_X16Y27.Y       Tilo                  0.616   Inst_vga/Inst_VGA_sync/h_sync_and0000
                                                        Inst_vga/Inst_VGA_sync/h_sync_and0000_SW0
-    SLICE_X2Y27.F3       net (fanout=1)        0.021   Inst_vga/Inst_VGA_sync/h_sync_and0000_SW0/O
-    SLICE_X2Y27.X        Tilo                  0.601   Inst_vga/Inst_VGA_sync/h_sync_and0000
+    SLICE_X16Y27.F3      net (fanout=1)        0.021   Inst_vga/Inst_VGA_sync/h_sync_and0000_SW0/O
+    SLICE_X16Y27.X       Tilo                  0.601   Inst_vga/Inst_VGA_sync/h_sync_and0000
                                                        Inst_vga/Inst_VGA_sync/h_sync_and0000
-    SLICE_X4Y27.G2       net (fanout=3)        0.429   Inst_vga/Inst_VGA_sync/h_sync_and0000
-    SLICE_X4Y27.Y        Tilo                  0.616   Inst_vga/Inst_VGA_sync/h_count<0>
+    SLICE_X16Y25.G2      net (fanout=3)        0.391   Inst_vga/Inst_VGA_sync/h_sync_and0000
+    SLICE_X16Y25.Y       Tilo                  0.616   Inst_vga/Inst_VGA_sync/h_count<0>
                                                        Inst_vga/Inst_VGA_sync/h_count_mux0002<0>11
-    SLICE_X0Y28.G1       net (fanout=8)        0.661   Inst_vga/Inst_VGA_sync/N11
-    SLICE_X0Y28.CLK      Tgck                  0.671   Inst_vga/Inst_VGA_sync/h_count<4>
-                                                       Inst_vga/Inst_VGA_sync/h_count_mux0002<5>1
-                                                       Inst_vga/Inst_VGA_sync/h_count_4
+    SLICE_X16Y30.G1      net (fanout=8)        0.663   Inst_vga/Inst_VGA_sync/N11
+    SLICE_X16Y30.CLK     Tgck                  0.671   Inst_vga/Inst_VGA_sync/h_count<3>
+                                                       Inst_vga/Inst_VGA_sync/h_count_mux0002<7>1
+                                                       Inst_vga/Inst_VGA_sync/h_count_2
     -------------------------------------------------  ---------------------------
-    Total                                      4.663ns (3.100ns logic, 1.563ns route)
-                                                       (66.5% logic, 33.5% route)
+    Total                                      4.732ns (3.025ns logic, 1.707ns route)
+                                                       (63.9% logic, 36.1% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     35.283ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_vga/Inst_VGA_sync/h_count_5 (FF)
+  Destination:          Inst_vga/Inst_VGA_sync/h_count_2 (FF)
+  Requirement:          40.000ns
+  Data Path Delay:      4.705ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.012ns (0.264 - 0.276)
+  Source Clock:         Inst_vga/clk25_s rising at 0.000ns
+  Destination Clock:    Inst_vga/clk25_s rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Inst_vga/Inst_VGA_sync/h_count_5 to Inst_vga/Inst_VGA_sync/h_count_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X18Y27.YQ      Tcko                  0.596   Inst_vga/Inst_VGA_sync/h_sync
+                                                       Inst_vga/Inst_VGA_sync/h_count_5
+    SLICE_X16Y27.G2      net (fanout=4)        0.530   Inst_vga/Inst_VGA_sync/h_count<5>
+    SLICE_X16Y27.Y       Tilo                  0.616   Inst_vga/Inst_VGA_sync/h_sync_and0000
+                                                       Inst_vga/Inst_VGA_sync/h_sync_and0000_SW0
+    SLICE_X16Y27.F3      net (fanout=1)        0.021   Inst_vga/Inst_VGA_sync/h_sync_and0000_SW0/O
+    SLICE_X16Y27.X       Tilo                  0.601   Inst_vga/Inst_VGA_sync/h_sync_and0000
+                                                       Inst_vga/Inst_VGA_sync/h_sync_and0000
+    SLICE_X16Y25.G2      net (fanout=3)        0.391   Inst_vga/Inst_VGA_sync/h_sync_and0000
+    SLICE_X16Y25.Y       Tilo                  0.616   Inst_vga/Inst_VGA_sync/h_count<0>
+                                                       Inst_vga/Inst_VGA_sync/h_count_mux0002<0>11
+    SLICE_X16Y30.G1      net (fanout=8)        0.663   Inst_vga/Inst_VGA_sync/N11
+    SLICE_X16Y30.CLK     Tgck                  0.671   Inst_vga/Inst_VGA_sync/h_count<3>
+                                                       Inst_vga/Inst_VGA_sync/h_count_mux0002<7>1
+                                                       Inst_vga/Inst_VGA_sync/h_count_2
+    -------------------------------------------------  ---------------------------
+    Total                                      4.705ns (3.100ns logic, 1.605ns route)
+                                                       (65.9% logic, 34.1% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point Inst_vga/Inst_VGA_sync/h_count_8 (SLICE_X0Y30.G1), 10 paths
+Paths for end point Inst_vga/Inst_VGA_sync/h_count_8 (SLICE_X16Y31.G1), 10 paths
 --------------------------------------------------------------------------------
-Slack (setup path):     34.591ns (requirement - (data path - clock path skew + uncertainty))
+Slack (setup path):     34.979ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_vga/Inst_VGA_sync/h_count_7 (FF)
+  Destination:          Inst_vga/Inst_VGA_sync/h_count_8 (FF)
+  Requirement:          40.000ns
+  Data Path Delay:      5.030ns (Levels of Logic = 3)
+  Clock Path Skew:      0.009ns (0.046 - 0.037)
+  Source Clock:         Inst_vga/clk25_s rising at 0.000ns
+  Destination Clock:    Inst_vga/clk25_s rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Inst_vga/Inst_VGA_sync/h_count_7 to Inst_vga/Inst_VGA_sync/h_count_8
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X16Y24.XQ      Tcko                  0.521   Inst_vga/Inst_VGA_sync/h_count<7>
+                                                       Inst_vga/Inst_VGA_sync/h_count_7
+    SLICE_X16Y27.F1      net (fanout=4)        1.567   Inst_vga/Inst_VGA_sync/h_count<7>
+    SLICE_X16Y27.X       Tilo                  0.601   Inst_vga/Inst_VGA_sync/h_sync_and0000
+                                                       Inst_vga/Inst_VGA_sync/h_sync_and0000
+    SLICE_X16Y25.G2      net (fanout=3)        0.391   Inst_vga/Inst_VGA_sync/h_sync_and0000
+    SLICE_X16Y25.Y       Tilo                  0.616   Inst_vga/Inst_VGA_sync/h_count<0>
+                                                       Inst_vga/Inst_VGA_sync/h_count_mux0002<0>11
+    SLICE_X16Y31.G1      net (fanout=8)        0.663   Inst_vga/Inst_VGA_sync/N11
+    SLICE_X16Y31.CLK     Tgck                  0.671   Inst_vga/Inst_VGA_sync/h_count<9>
+                                                       Inst_vga/Inst_VGA_sync/h_count_mux0002<1>1
+                                                       Inst_vga/Inst_VGA_sync/h_count_8
+    -------------------------------------------------  ---------------------------
+    Total                                      5.030ns (2.409ns logic, 2.621ns route)
+                                                       (47.9% logic, 52.1% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     35.260ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_vga/Inst_VGA_sync/h_count_3 (FF)
+  Destination:          Inst_vga/Inst_VGA_sync/h_count_8 (FF)
+  Requirement:          40.000ns
+  Data Path Delay:      4.732ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.008ns (0.046 - 0.054)
+  Source Clock:         Inst_vga/clk25_s rising at 0.000ns
+  Destination Clock:    Inst_vga/clk25_s rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Inst_vga/Inst_VGA_sync/h_count_3 to Inst_vga/Inst_VGA_sync/h_count_8
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X16Y30.XQ      Tcko                  0.521   Inst_vga/Inst_VGA_sync/h_count<3>
+                                                       Inst_vga/Inst_VGA_sync/h_count_3
+    SLICE_X16Y27.G4      net (fanout=4)        0.632   Inst_vga/Inst_VGA_sync/h_count<3>
+    SLICE_X16Y27.Y       Tilo                  0.616   Inst_vga/Inst_VGA_sync/h_sync_and0000
+                                                       Inst_vga/Inst_VGA_sync/h_sync_and0000_SW0
+    SLICE_X16Y27.F3      net (fanout=1)        0.021   Inst_vga/Inst_VGA_sync/h_sync_and0000_SW0/O
+    SLICE_X16Y27.X       Tilo                  0.601   Inst_vga/Inst_VGA_sync/h_sync_and0000
+                                                       Inst_vga/Inst_VGA_sync/h_sync_and0000
+    SLICE_X16Y25.G2      net (fanout=3)        0.391   Inst_vga/Inst_VGA_sync/h_sync_and0000
+    SLICE_X16Y25.Y       Tilo                  0.616   Inst_vga/Inst_VGA_sync/h_count<0>
+                                                       Inst_vga/Inst_VGA_sync/h_count_mux0002<0>11
+    SLICE_X16Y31.G1      net (fanout=8)        0.663   Inst_vga/Inst_VGA_sync/N11
+    SLICE_X16Y31.CLK     Tgck                  0.671   Inst_vga/Inst_VGA_sync/h_count<9>
+                                                       Inst_vga/Inst_VGA_sync/h_count_mux0002<1>1
+                                                       Inst_vga/Inst_VGA_sync/h_count_8
+    -------------------------------------------------  ---------------------------
+    Total                                      4.732ns (3.025ns logic, 1.707ns route)
+                                                       (63.9% logic, 36.1% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     35.283ns (requirement - (data path - clock path skew + uncertainty))
   Source:               Inst_vga/Inst_VGA_sync/h_count_5 (FF)
   Destination:          Inst_vga/Inst_VGA_sync/h_count_8 (FF)
   Requirement:          40.000ns
-  Data Path Delay:      5.384ns (Levels of Logic = 4)
-  Clock Path Skew:      -0.025ns (0.259 - 0.284)
+  Data Path Delay:      4.705ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.012ns (0.264 - 0.276)
   Source Clock:         Inst_vga/clk25_s rising at 0.000ns
   Destination Clock:    Inst_vga/clk25_s rising at 40.000ns
   Clock Uncertainty:    0.000ns
@@ -203,197 +265,126 @@ Slack (setup path):     34.591ns (requirement - (data path - clock path skew + u
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X5Y27.XQ       Tcko                  0.495   Inst_vga/Inst_VGA_sync/h_count<5>
+    SLICE_X18Y27.YQ      Tcko                  0.596   Inst_vga/Inst_VGA_sync/h_sync
                                                        Inst_vga/Inst_VGA_sync/h_count_5
-    SLICE_X2Y27.G2       net (fanout=4)        1.274   Inst_vga/Inst_VGA_sync/h_count<5>
-    SLICE_X2Y27.Y        Tilo                  0.616   Inst_vga/Inst_VGA_sync/h_sync_and0000
+    SLICE_X16Y27.G2      net (fanout=4)        0.530   Inst_vga/Inst_VGA_sync/h_count<5>
+    SLICE_X16Y27.Y       Tilo                  0.616   Inst_vga/Inst_VGA_sync/h_sync_and0000
                                                        Inst_vga/Inst_VGA_sync/h_sync_and0000_SW0
-    SLICE_X2Y27.F3       net (fanout=1)        0.021   Inst_vga/Inst_VGA_sync/h_sync_and0000_SW0/O
-    SLICE_X2Y27.X        Tilo                  0.601   Inst_vga/Inst_VGA_sync/h_sync_and0000
+    SLICE_X16Y27.F3      net (fanout=1)        0.021   Inst_vga/Inst_VGA_sync/h_sync_and0000_SW0/O
+    SLICE_X16Y27.X       Tilo                  0.601   Inst_vga/Inst_VGA_sync/h_sync_and0000
                                                        Inst_vga/Inst_VGA_sync/h_sync_and0000
-    SLICE_X4Y27.G2       net (fanout=3)        0.429   Inst_vga/Inst_VGA_sync/h_sync_and0000
-    SLICE_X4Y27.Y        Tilo                  0.616   Inst_vga/Inst_VGA_sync/h_count<0>
+    SLICE_X16Y25.G2      net (fanout=3)        0.391   Inst_vga/Inst_VGA_sync/h_sync_and0000
+    SLICE_X16Y25.Y       Tilo                  0.616   Inst_vga/Inst_VGA_sync/h_count<0>
                                                        Inst_vga/Inst_VGA_sync/h_count_mux0002<0>11
-    SLICE_X0Y30.G1       net (fanout=8)        0.661   Inst_vga/Inst_VGA_sync/N11
-    SLICE_X0Y30.CLK      Tgck                  0.671   Inst_vga/Inst_VGA_sync/h_count<9>
+    SLICE_X16Y31.G1      net (fanout=8)        0.663   Inst_vga/Inst_VGA_sync/N11
+    SLICE_X16Y31.CLK     Tgck                  0.671   Inst_vga/Inst_VGA_sync/h_count<9>
                                                        Inst_vga/Inst_VGA_sync/h_count_mux0002<1>1
                                                        Inst_vga/Inst_VGA_sync/h_count_8
     -------------------------------------------------  ---------------------------
-    Total                                      5.384ns (2.999ns logic, 2.385ns route)
-                                                       (55.7% logic, 44.3% route)
+    Total                                      4.705ns (3.100ns logic, 1.605ns route)
+                                                       (65.9% logic, 34.1% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     35.329ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_vga/Inst_VGA_sync/h_count_2 (FF)
-  Destination:          Inst_vga/Inst_VGA_sync/h_count_8 (FF)
+
+Paths for end point Inst_vga/Inst_VGA_sync/h_count_3 (SLICE_X16Y30.F1), 10 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     34.999ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_vga/Inst_VGA_sync/h_count_7 (FF)
+  Destination:          Inst_vga/Inst_VGA_sync/h_count_3 (FF)
   Requirement:          40.000ns
-  Data Path Delay:      4.671ns (Levels of Logic = 4)
+  Data Path Delay:      5.010ns (Levels of Logic = 3)
+  Clock Path Skew:      0.009ns (0.046 - 0.037)
+  Source Clock:         Inst_vga/clk25_s rising at 0.000ns
+  Destination Clock:    Inst_vga/clk25_s rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Inst_vga/Inst_VGA_sync/h_count_7 to Inst_vga/Inst_VGA_sync/h_count_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X16Y24.XQ      Tcko                  0.521   Inst_vga/Inst_VGA_sync/h_count<7>
+                                                       Inst_vga/Inst_VGA_sync/h_count_7
+    SLICE_X16Y27.F1      net (fanout=4)        1.567   Inst_vga/Inst_VGA_sync/h_count<7>
+    SLICE_X16Y27.X       Tilo                  0.601   Inst_vga/Inst_VGA_sync/h_sync_and0000
+                                                       Inst_vga/Inst_VGA_sync/h_sync_and0000
+    SLICE_X16Y25.G2      net (fanout=3)        0.391   Inst_vga/Inst_VGA_sync/h_sync_and0000
+    SLICE_X16Y25.Y       Tilo                  0.616   Inst_vga/Inst_VGA_sync/h_count<0>
+                                                       Inst_vga/Inst_VGA_sync/h_count_mux0002<0>11
+    SLICE_X16Y30.F1      net (fanout=8)        0.658   Inst_vga/Inst_VGA_sync/N11
+    SLICE_X16Y30.CLK     Tfck                  0.656   Inst_vga/Inst_VGA_sync/h_count<3>
+                                                       Inst_vga/Inst_VGA_sync/h_count_mux0002<6>1
+                                                       Inst_vga/Inst_VGA_sync/h_count_3
+    -------------------------------------------------  ---------------------------
+    Total                                      5.010ns (2.394ns logic, 2.616ns route)
+                                                       (47.8% logic, 52.2% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     35.288ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_vga/Inst_VGA_sync/h_count_3 (FF)
+  Destination:          Inst_vga/Inst_VGA_sync/h_count_3 (FF)
+  Requirement:          40.000ns
+  Data Path Delay:      4.712ns (Levels of Logic = 4)
   Clock Path Skew:      0.000ns
   Source Clock:         Inst_vga/clk25_s rising at 0.000ns
   Destination Clock:    Inst_vga/clk25_s rising at 40.000ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: Inst_vga/Inst_VGA_sync/h_count_2 to Inst_vga/Inst_VGA_sync/h_count_8
+  Maximum Data Path: Inst_vga/Inst_VGA_sync/h_count_3 to Inst_vga/Inst_VGA_sync/h_count_3
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X0Y27.YQ       Tcko                  0.596   Inst_vga/Inst_VGA_sync/h_count<3>
-                                                       Inst_vga/Inst_VGA_sync/h_count_2
-    SLICE_X2Y27.G3       net (fanout=4)        0.460   Inst_vga/Inst_VGA_sync/h_count<2>
-    SLICE_X2Y27.Y        Tilo                  0.616   Inst_vga/Inst_VGA_sync/h_sync_and0000
+    SLICE_X16Y30.XQ      Tcko                  0.521   Inst_vga/Inst_VGA_sync/h_count<3>
+                                                       Inst_vga/Inst_VGA_sync/h_count_3
+    SLICE_X16Y27.G4      net (fanout=4)        0.632   Inst_vga/Inst_VGA_sync/h_count<3>
+    SLICE_X16Y27.Y       Tilo                  0.616   Inst_vga/Inst_VGA_sync/h_sync_and0000
                                                        Inst_vga/Inst_VGA_sync/h_sync_and0000_SW0
-    SLICE_X2Y27.F3       net (fanout=1)        0.021   Inst_vga/Inst_VGA_sync/h_sync_and0000_SW0/O
-    SLICE_X2Y27.X        Tilo                  0.601   Inst_vga/Inst_VGA_sync/h_sync_and0000
+    SLICE_X16Y27.F3      net (fanout=1)        0.021   Inst_vga/Inst_VGA_sync/h_sync_and0000_SW0/O
+    SLICE_X16Y27.X       Tilo                  0.601   Inst_vga/Inst_VGA_sync/h_sync_and0000
                                                        Inst_vga/Inst_VGA_sync/h_sync_and0000
-    SLICE_X4Y27.G2       net (fanout=3)        0.429   Inst_vga/Inst_VGA_sync/h_sync_and0000
-    SLICE_X4Y27.Y        Tilo                  0.616   Inst_vga/Inst_VGA_sync/h_count<0>
+    SLICE_X16Y25.G2      net (fanout=3)        0.391   Inst_vga/Inst_VGA_sync/h_sync_and0000
+    SLICE_X16Y25.Y       Tilo                  0.616   Inst_vga/Inst_VGA_sync/h_count<0>
                                                        Inst_vga/Inst_VGA_sync/h_count_mux0002<0>11
-    SLICE_X0Y30.G1       net (fanout=8)        0.661   Inst_vga/Inst_VGA_sync/N11
-    SLICE_X0Y30.CLK      Tgck                  0.671   Inst_vga/Inst_VGA_sync/h_count<9>
-                                                       Inst_vga/Inst_VGA_sync/h_count_mux0002<1>1
-                                                       Inst_vga/Inst_VGA_sync/h_count_8
+    SLICE_X16Y30.F1      net (fanout=8)        0.658   Inst_vga/Inst_VGA_sync/N11
+    SLICE_X16Y30.CLK     Tfck                  0.656   Inst_vga/Inst_VGA_sync/h_count<3>
+                                                       Inst_vga/Inst_VGA_sync/h_count_mux0002<6>1
+                                                       Inst_vga/Inst_VGA_sync/h_count_3
     -------------------------------------------------  ---------------------------
-    Total                                      4.671ns (3.100ns logic, 1.571ns route)
-                                                       (66.4% logic, 33.6% route)
+    Total                                      4.712ns (3.010ns logic, 1.702ns route)
+                                                       (63.9% logic, 36.1% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     35.337ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_vga/Inst_VGA_sync/h_count_1 (FF)
-  Destination:          Inst_vga/Inst_VGA_sync/h_count_8 (FF)
-  Requirement:          40.000ns
-  Data Path Delay:      4.663ns (Levels of Logic = 4)
-  Clock Path Skew:      0.000ns
-  Source Clock:         Inst_vga/clk25_s rising at 0.000ns
-  Destination Clock:    Inst_vga/clk25_s rising at 40.000ns
-  Clock Uncertainty:    0.000ns
-
-  Maximum Data Path: Inst_vga/Inst_VGA_sync/h_count_1 to Inst_vga/Inst_VGA_sync/h_count_8
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X0Y26.YQ       Tcko                  0.596   Inst_vga/Inst_VGA_sync/h_count<7>
-                                                       Inst_vga/Inst_VGA_sync/h_count_1
-    SLICE_X2Y27.G4       net (fanout=4)        0.452   Inst_vga/Inst_VGA_sync/h_count<1>
-    SLICE_X2Y27.Y        Tilo                  0.616   Inst_vga/Inst_VGA_sync/h_sync_and0000
-                                                       Inst_vga/Inst_VGA_sync/h_sync_and0000_SW0
-    SLICE_X2Y27.F3       net (fanout=1)        0.021   Inst_vga/Inst_VGA_sync/h_sync_and0000_SW0/O
-    SLICE_X2Y27.X        Tilo                  0.601   Inst_vga/Inst_VGA_sync/h_sync_and0000
-                                                       Inst_vga/Inst_VGA_sync/h_sync_and0000
-    SLICE_X4Y27.G2       net (fanout=3)        0.429   Inst_vga/Inst_VGA_sync/h_sync_and0000
-    SLICE_X4Y27.Y        Tilo                  0.616   Inst_vga/Inst_VGA_sync/h_count<0>
-                                                       Inst_vga/Inst_VGA_sync/h_count_mux0002<0>11
-    SLICE_X0Y30.G1       net (fanout=8)        0.661   Inst_vga/Inst_VGA_sync/N11
-    SLICE_X0Y30.CLK      Tgck                  0.671   Inst_vga/Inst_VGA_sync/h_count<9>
-                                                       Inst_vga/Inst_VGA_sync/h_count_mux0002<1>1
-                                                       Inst_vga/Inst_VGA_sync/h_count_8
-    -------------------------------------------------  ---------------------------
-    Total                                      4.663ns (3.100ns logic, 1.563ns route)
-                                                       (66.5% logic, 33.5% route)
-
---------------------------------------------------------------------------------
-
-Paths for end point Inst_vga/Inst_VGA_sync/h_count_9 (SLICE_X0Y30.F1), 10 paths
---------------------------------------------------------------------------------
-Slack (setup path):     34.611ns (requirement - (data path - clock path skew + uncertainty))
+Slack (setup path):     35.303ns (requirement - (data path - clock path skew + uncertainty))
   Source:               Inst_vga/Inst_VGA_sync/h_count_5 (FF)
-  Destination:          Inst_vga/Inst_VGA_sync/h_count_9 (FF)
+  Destination:          Inst_vga/Inst_VGA_sync/h_count_3 (FF)
   Requirement:          40.000ns
-  Data Path Delay:      5.364ns (Levels of Logic = 4)
-  Clock Path Skew:      -0.025ns (0.259 - 0.284)
+  Data Path Delay:      4.685ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.012ns (0.264 - 0.276)
   Source Clock:         Inst_vga/clk25_s rising at 0.000ns
   Destination Clock:    Inst_vga/clk25_s rising at 40.000ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: Inst_vga/Inst_VGA_sync/h_count_5 to Inst_vga/Inst_VGA_sync/h_count_9
+  Maximum Data Path: Inst_vga/Inst_VGA_sync/h_count_5 to Inst_vga/Inst_VGA_sync/h_count_3
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X5Y27.XQ       Tcko                  0.495   Inst_vga/Inst_VGA_sync/h_count<5>
+    SLICE_X18Y27.YQ      Tcko                  0.596   Inst_vga/Inst_VGA_sync/h_sync
                                                        Inst_vga/Inst_VGA_sync/h_count_5
-    SLICE_X2Y27.G2       net (fanout=4)        1.274   Inst_vga/Inst_VGA_sync/h_count<5>
-    SLICE_X2Y27.Y        Tilo                  0.616   Inst_vga/Inst_VGA_sync/h_sync_and0000
+    SLICE_X16Y27.G2      net (fanout=4)        0.530   Inst_vga/Inst_VGA_sync/h_count<5>
+    SLICE_X16Y27.Y       Tilo                  0.616   Inst_vga/Inst_VGA_sync/h_sync_and0000
                                                        Inst_vga/Inst_VGA_sync/h_sync_and0000_SW0
-    SLICE_X2Y27.F3       net (fanout=1)        0.021   Inst_vga/Inst_VGA_sync/h_sync_and0000_SW0/O
-    SLICE_X2Y27.X        Tilo                  0.601   Inst_vga/Inst_VGA_sync/h_sync_and0000
+    SLICE_X16Y27.F3      net (fanout=1)        0.021   Inst_vga/Inst_VGA_sync/h_sync_and0000_SW0/O
+    SLICE_X16Y27.X       Tilo                  0.601   Inst_vga/Inst_VGA_sync/h_sync_and0000
                                                        Inst_vga/Inst_VGA_sync/h_sync_and0000
-    SLICE_X4Y27.G2       net (fanout=3)        0.429   Inst_vga/Inst_VGA_sync/h_sync_and0000
-    SLICE_X4Y27.Y        Tilo                  0.616   Inst_vga/Inst_VGA_sync/h_count<0>
+    SLICE_X16Y25.G2      net (fanout=3)        0.391   Inst_vga/Inst_VGA_sync/h_sync_and0000
+    SLICE_X16Y25.Y       Tilo                  0.616   Inst_vga/Inst_VGA_sync/h_count<0>
                                                        Inst_vga/Inst_VGA_sync/h_count_mux0002<0>11
-    SLICE_X0Y30.F1       net (fanout=8)        0.656   Inst_vga/Inst_VGA_sync/N11
-    SLICE_X0Y30.CLK      Tfck                  0.656   Inst_vga/Inst_VGA_sync/h_count<9>
-                                                       Inst_vga/Inst_VGA_sync/h_count_mux0002<0>1
-                                                       Inst_vga/Inst_VGA_sync/h_count_9
+    SLICE_X16Y30.F1      net (fanout=8)        0.658   Inst_vga/Inst_VGA_sync/N11
+    SLICE_X16Y30.CLK     Tfck                  0.656   Inst_vga/Inst_VGA_sync/h_count<3>
+                                                       Inst_vga/Inst_VGA_sync/h_count_mux0002<6>1
+                                                       Inst_vga/Inst_VGA_sync/h_count_3
     -------------------------------------------------  ---------------------------
-    Total                                      5.364ns (2.984ns logic, 2.380ns route)
-                                                       (55.6% logic, 44.4% route)
-
---------------------------------------------------------------------------------
-Slack (setup path):     35.349ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_vga/Inst_VGA_sync/h_count_2 (FF)
-  Destination:          Inst_vga/Inst_VGA_sync/h_count_9 (FF)
-  Requirement:          40.000ns
-  Data Path Delay:      4.651ns (Levels of Logic = 4)
-  Clock Path Skew:      0.000ns
-  Source Clock:         Inst_vga/clk25_s rising at 0.000ns
-  Destination Clock:    Inst_vga/clk25_s rising at 40.000ns
-  Clock Uncertainty:    0.000ns
-
-  Maximum Data Path: Inst_vga/Inst_VGA_sync/h_count_2 to Inst_vga/Inst_VGA_sync/h_count_9
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X0Y27.YQ       Tcko                  0.596   Inst_vga/Inst_VGA_sync/h_count<3>
-                                                       Inst_vga/Inst_VGA_sync/h_count_2
-    SLICE_X2Y27.G3       net (fanout=4)        0.460   Inst_vga/Inst_VGA_sync/h_count<2>
-    SLICE_X2Y27.Y        Tilo                  0.616   Inst_vga/Inst_VGA_sync/h_sync_and0000
-                                                       Inst_vga/Inst_VGA_sync/h_sync_and0000_SW0
-    SLICE_X2Y27.F3       net (fanout=1)        0.021   Inst_vga/Inst_VGA_sync/h_sync_and0000_SW0/O
-    SLICE_X2Y27.X        Tilo                  0.601   Inst_vga/Inst_VGA_sync/h_sync_and0000
-                                                       Inst_vga/Inst_VGA_sync/h_sync_and0000
-    SLICE_X4Y27.G2       net (fanout=3)        0.429   Inst_vga/Inst_VGA_sync/h_sync_and0000
-    SLICE_X4Y27.Y        Tilo                  0.616   Inst_vga/Inst_VGA_sync/h_count<0>
-                                                       Inst_vga/Inst_VGA_sync/h_count_mux0002<0>11
-    SLICE_X0Y30.F1       net (fanout=8)        0.656   Inst_vga/Inst_VGA_sync/N11
-    SLICE_X0Y30.CLK      Tfck                  0.656   Inst_vga/Inst_VGA_sync/h_count<9>
-                                                       Inst_vga/Inst_VGA_sync/h_count_mux0002<0>1
-                                                       Inst_vga/Inst_VGA_sync/h_count_9
-    -------------------------------------------------  ---------------------------
-    Total                                      4.651ns (3.085ns logic, 1.566ns route)
-                                                       (66.3% logic, 33.7% route)
-
---------------------------------------------------------------------------------
-Slack (setup path):     35.357ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_vga/Inst_VGA_sync/h_count_1 (FF)
-  Destination:          Inst_vga/Inst_VGA_sync/h_count_9 (FF)
-  Requirement:          40.000ns
-  Data Path Delay:      4.643ns (Levels of Logic = 4)
-  Clock Path Skew:      0.000ns
-  Source Clock:         Inst_vga/clk25_s rising at 0.000ns
-  Destination Clock:    Inst_vga/clk25_s rising at 40.000ns
-  Clock Uncertainty:    0.000ns
-
-  Maximum Data Path: Inst_vga/Inst_VGA_sync/h_count_1 to Inst_vga/Inst_VGA_sync/h_count_9
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X0Y26.YQ       Tcko                  0.596   Inst_vga/Inst_VGA_sync/h_count<7>
-                                                       Inst_vga/Inst_VGA_sync/h_count_1
-    SLICE_X2Y27.G4       net (fanout=4)        0.452   Inst_vga/Inst_VGA_sync/h_count<1>
-    SLICE_X2Y27.Y        Tilo                  0.616   Inst_vga/Inst_VGA_sync/h_sync_and0000
-                                                       Inst_vga/Inst_VGA_sync/h_sync_and0000_SW0
-    SLICE_X2Y27.F3       net (fanout=1)        0.021   Inst_vga/Inst_VGA_sync/h_sync_and0000_SW0/O
-    SLICE_X2Y27.X        Tilo                  0.601   Inst_vga/Inst_VGA_sync/h_sync_and0000
-                                                       Inst_vga/Inst_VGA_sync/h_sync_and0000
-    SLICE_X4Y27.G2       net (fanout=3)        0.429   Inst_vga/Inst_VGA_sync/h_sync_and0000
-    SLICE_X4Y27.Y        Tilo                  0.616   Inst_vga/Inst_VGA_sync/h_count<0>
-                                                       Inst_vga/Inst_VGA_sync/h_count_mux0002<0>11
-    SLICE_X0Y30.F1       net (fanout=8)        0.656   Inst_vga/Inst_VGA_sync/N11
-    SLICE_X0Y30.CLK      Tfck                  0.656   Inst_vga/Inst_VGA_sync/h_count<9>
-                                                       Inst_vga/Inst_VGA_sync/h_count_mux0002<0>1
-                                                       Inst_vga/Inst_VGA_sync/h_count_9
-    -------------------------------------------------  ---------------------------
-    Total                                      4.643ns (3.085ns logic, 1.558ns route)
-                                                       (66.4% logic, 33.6% route)
+    Total                                      4.685ns (3.085ns logic, 1.600ns route)
+                                                       (65.8% logic, 34.2% route)
 
 --------------------------------------------------------------------------------
 
@@ -403,13 +394,41 @@ Hold Paths: PERIOD analysis for net "Inst_vga/Inst_clock25/CLKFX_BUF" derived fr
 
 --------------------------------------------------------------------------------
 
-Paths for end point Inst_vga/Inst_VGA_sync/ENABLE_H (SLICE_X3Y27.F1), 1 path
+Paths for end point Inst_vga/Inst_VGA_sync/h_sync (SLICE_X18Y27.F4), 1 path
 --------------------------------------------------------------------------------
-Slack (hold path):      1.143ns (requirement - (clock path skew + uncertainty - data path))
+Slack (hold path):      1.122ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               Inst_vga/Inst_VGA_sync/h_sync (FF)
+  Destination:          Inst_vga/Inst_VGA_sync/h_sync (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.122ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         Inst_vga/clk25_s rising at 40.000ns
+  Destination Clock:    Inst_vga/clk25_s rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: Inst_vga/Inst_VGA_sync/h_sync to Inst_vga/Inst_VGA_sync/h_sync
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X18Y27.XQ      Tcko                  0.417   Inst_vga/Inst_VGA_sync/h_sync
+                                                       Inst_vga/Inst_VGA_sync/h_sync
+    SLICE_X18Y27.F4      net (fanout=14)       0.267   Inst_vga/Inst_VGA_sync/h_sync
+    SLICE_X18Y27.CLK     Tckf        (-Th)    -0.438   Inst_vga/Inst_VGA_sync/h_sync
+                                                       Inst_vga/Inst_VGA_sync/h_sync_mux000011
+                                                       Inst_vga/Inst_VGA_sync/h_sync
+    -------------------------------------------------  ---------------------------
+    Total                                      1.122ns (0.855ns logic, 0.267ns route)
+                                                       (76.2% logic, 23.8% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point Inst_vga/Inst_VGA_sync/ENABLE_H (SLICE_X16Y29.F1), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.188ns (requirement - (clock path skew + uncertainty - data path))
   Source:               Inst_vga/Inst_VGA_sync/ENABLE_H (FF)
   Destination:          Inst_vga/Inst_VGA_sync/ENABLE_H (FF)
   Requirement:          0.000ns
-  Data Path Delay:      1.143ns (Levels of Logic = 1)
+  Data Path Delay:      1.188ns (Levels of Logic = 1)
   Clock Path Skew:      0.000ns
   Source Clock:         Inst_vga/clk25_s rising at 40.000ns
   Destination Clock:    Inst_vga/clk25_s rising at 40.000ns
@@ -419,71 +438,43 @@ Slack (hold path):      1.143ns (requirement - (clock path skew + uncertainty - 
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X3Y27.XQ       Tcko                  0.396   Inst_vga/Inst_VGA_sync/ENABLE_H
+    SLICE_X16Y29.XQ      Tcko                  0.417   Inst_vga/Inst_VGA_sync/ENABLE_H
                                                        Inst_vga/Inst_VGA_sync/ENABLE_H
-    SLICE_X3Y27.F1       net (fanout=10)       0.341   Inst_vga/Inst_VGA_sync/ENABLE_H
-    SLICE_X3Y27.CLK      Tckf        (-Th)    -0.406   Inst_vga/Inst_VGA_sync/ENABLE_H
+    SLICE_X16Y29.F1      net (fanout=10)       0.333   Inst_vga/Inst_VGA_sync/ENABLE_H
+    SLICE_X16Y29.CLK     Tckf        (-Th)    -0.438   Inst_vga/Inst_VGA_sync/ENABLE_H
                                                        Inst_vga/Inst_VGA_sync/ENABLE_H_mux0000961
                                                        Inst_vga/Inst_VGA_sync/ENABLE_H
     -------------------------------------------------  ---------------------------
-    Total                                      1.143ns (0.802ns logic, 0.341ns route)
-                                                       (70.2% logic, 29.8% route)
+    Total                                      1.188ns (0.855ns logic, 0.333ns route)
+                                                       (72.0% logic, 28.0% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point Inst_vga/Inst_VGA_sync/clk_2_cnt_3 (SLICE_X13Y20.F3), 1 path
+Paths for end point Inst_vga/Inst_VGA_sync/clk_2_cnt_3 (SLICE_X5Y24.F3), 1 path
 --------------------------------------------------------------------------------
-Slack (hold path):      1.206ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               Inst_vga/Inst_VGA_sync/clk_2_cnt_2 (FF)
+Slack (hold path):      1.202ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               Inst_vga/Inst_VGA_sync/clk_2_cnt_1 (FF)
   Destination:          Inst_vga/Inst_VGA_sync/clk_2_cnt_3 (FF)
   Requirement:          0.000ns
   Data Path Delay:      1.206ns (Levels of Logic = 1)
-  Clock Path Skew:      0.000ns
+  Clock Path Skew:      0.004ns (0.027 - 0.023)
   Source Clock:         Inst_vga/clk25_s rising at 40.000ns
   Destination Clock:    Inst_vga/clk25_s rising at 40.000ns
   Clock Uncertainty:    0.000ns
 
-  Minimum Data Path: Inst_vga/Inst_VGA_sync/clk_2_cnt_2 to Inst_vga/Inst_VGA_sync/clk_2_cnt_3
+  Minimum Data Path: Inst_vga/Inst_VGA_sync/clk_2_cnt_1 to Inst_vga/Inst_VGA_sync/clk_2_cnt_3
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X13Y20.YQ      Tcko                  0.419   Inst_vga/Inst_VGA_sync/clk_2_cnt<3>
-                                                       Inst_vga/Inst_VGA_sync/clk_2_cnt_2
-    SLICE_X13Y20.F3      net (fanout=5)        0.381   Inst_vga/Inst_VGA_sync/clk_2_cnt<2>
-    SLICE_X13Y20.CLK     Tckf        (-Th)    -0.406   Inst_vga/Inst_VGA_sync/clk_2_cnt<3>
+    SLICE_X5Y25.YQ       Tcko                  0.419   Inst_vga/Inst_VGA_sync/clk_2_cnt<1>
+                                                       Inst_vga/Inst_VGA_sync/clk_2_cnt_1
+    SLICE_X5Y24.F3       net (fanout=5)        0.381   Inst_vga/Inst_VGA_sync/clk_2_cnt<1>
+    SLICE_X5Y24.CLK      Tckf        (-Th)    -0.406   Inst_vga/Inst_VGA_sync/clk_2_cnt<3>
                                                        Inst_vga/Inst_VGA_sync/clk_2_cnt_mux0002<0>1
                                                        Inst_vga/Inst_VGA_sync/clk_2_cnt_3
     -------------------------------------------------  ---------------------------
     Total                                      1.206ns (0.825ns logic, 0.381ns route)
                                                        (68.4% logic, 31.6% route)
-
---------------------------------------------------------------------------------
-
-Paths for end point Inst_vga/Inst_VGA_sync/clk_2_cnt_1 (SLICE_X13Y21.G4), 1 path
---------------------------------------------------------------------------------
-Slack (hold path):      1.219ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               Inst_vga/Inst_VGA_sync/clk_2_cnt_3 (FF)
-  Destination:          Inst_vga/Inst_VGA_sync/clk_2_cnt_1 (FF)
-  Requirement:          0.000ns
-  Data Path Delay:      1.222ns (Levels of Logic = 1)
-  Clock Path Skew:      0.003ns (0.016 - 0.013)
-  Source Clock:         Inst_vga/clk25_s rising at 40.000ns
-  Destination Clock:    Inst_vga/clk25_s rising at 40.000ns
-  Clock Uncertainty:    0.000ns
-
-  Minimum Data Path: Inst_vga/Inst_VGA_sync/clk_2_cnt_3 to Inst_vga/Inst_VGA_sync/clk_2_cnt_1
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X13Y20.XQ      Tcko                  0.396   Inst_vga/Inst_VGA_sync/clk_2_cnt<3>
-                                                       Inst_vga/Inst_VGA_sync/clk_2_cnt_3
-    SLICE_X13Y21.G4      net (fanout=3)        0.420   Inst_vga/Inst_VGA_sync/clk_2_cnt<3>
-    SLICE_X13Y21.CLK     Tckg        (-Th)    -0.406   Inst_vga/Inst_VGA_sync/clk_2_cnt<1>
-                                                       Inst_vga/Inst_VGA_sync/clk_2_cnt_mux0002<2>1
-                                                       Inst_vga/Inst_VGA_sync/clk_2_cnt_1
-    -------------------------------------------------  ---------------------------
-    Total                                      1.222ns (0.802ns logic, 0.420ns route)
-                                                       (65.6% logic, 34.4% route)
 
 --------------------------------------------------------------------------------
 
@@ -504,18 +495,18 @@ Slack: 38.672ns (period - (min high pulse limit / (high pulse / period)))
   Period: 40.000ns
   High pulse: 19.999ns
   High pulse limit: 0.664ns (Tch)
-  Physical resource: Inst_vga/Inst_VGA_sync/clk_2_cnt<0>/CLK
-  Logical resource: Inst_vga/Inst_VGA_sync/clk_2_cnt_0/CK
-  Location pin: SLICE_X12Y21.CLK
+  Physical resource: Inst_vga/Inst_VGA_sync/h_count<7>/CLK
+  Logical resource: Inst_vga/Inst_VGA_sync/h_count_7/CK
+  Location pin: SLICE_X16Y24.CLK
   Clock network: Inst_vga/clk25_s
 --------------------------------------------------------------------------------
 Slack: 38.672ns (period - (min high pulse limit / (high pulse / period)))
   Period: 40.000ns
   High pulse: 19.999ns
   High pulse limit: 0.664ns (Tch)
-  Physical resource: Inst_vga/Inst_VGA_sync/clk_2/CLK
-  Logical resource: Inst_vga/Inst_VGA_sync/clk_2/CK
-  Location pin: SLICE_X12Y20.CLK
+  Physical resource: Inst_vga/Inst_VGA_sync/h_count<7>/CLK
+  Logical resource: Inst_vga/Inst_VGA_sync/h_count_1/CK
+  Location pin: SLICE_X16Y24.CLK
   Clock network: Inst_vga/clk25_s
 --------------------------------------------------------------------------------
 
@@ -525,130 +516,55 @@ derived from  NET "CLKIN_IBUFG_OUT_OBUF" PERIOD = 83.3333333 ns HIGH 50%;  duty
 cycle corrected to 83.333 nS  HIGH 41.666 nS  
 For more information, see Period Analysis in the Timing Closure User Guide (UG612).
 
- 993 paths analyzed, 222 endpoints analyzed, 0 failing endpoints
+ 1250 paths analyzed, 271 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is   7.777ns.
+ Minimum period is   6.878ns.
 --------------------------------------------------------------------------------
 
-Paths for end point Inst_UART/Inst_uart_rx/info_4 (SLICE_X6Y8.SR), 12 paths
+Paths for end point Inst_UART/Inst_uart_rx/info_2 (SLICE_X4Y15.SR), 14 paths
 --------------------------------------------------------------------------------
-Slack (setup path):     75.556ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_UART/Inst_uart_rx/conteo_2 (FF)
-  Destination:          Inst_UART/Inst_uart_rx/info_4 (FF)
+Slack (setup path):     76.455ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_UART/Inst_uart_rx/conteo_1 (FF)
+  Destination:          Inst_UART/Inst_uart_rx/info_2 (FF)
   Requirement:          83.333ns
-  Data Path Delay:      7.731ns (Levels of Logic = 4)
-  Clock Path Skew:      -0.046ns (0.246 - 0.292)
+  Data Path Delay:      6.820ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.058ns (0.228 - 0.286)
   Source Clock:         clk0 rising at 0.000ns
   Destination Clock:    clk0 rising at 83.333ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: Inst_UART/Inst_uart_rx/conteo_2 to Inst_UART/Inst_uart_rx/info_4
+  Maximum Data Path: Inst_UART/Inst_uart_rx/conteo_1 to Inst_UART/Inst_uart_rx/info_2
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X2Y22.XQ       Tcko                  0.521   Inst_UART/Inst_uart_rx/conteo<2>
-                                                       Inst_UART/Inst_uart_rx/conteo_2
-    SLICE_X3Y25.G1       net (fanout=6)        1.183   Inst_UART/Inst_uart_rx/conteo<2>
-    SLICE_X3Y25.Y        Tilo                  0.561   N44
+    SLICE_X0Y24.XQ       Tcko                  0.521   Inst_UART/Inst_uart_rx/conteo<1>
+                                                       Inst_UART/Inst_uart_rx/conteo_1
+    SLICE_X0Y22.G1       net (fanout=6)        0.587   Inst_UART/Inst_uart_rx/conteo<1>
+    SLICE_X0Y22.Y        Tilo                  0.616   Inst_UART/Inst_uart_rx/estado_cmp_lt0001
                                                        Inst_UART/Inst_uart_rx/estado_cmp_lt00011_SW0
-    SLICE_X7Y22.G4       net (fanout=1)        0.517   N48
-    SLICE_X7Y22.Y        Tilo                  0.561   Inst_UART/Inst_uart_rx/N24
+    SLICE_X0Y22.F4       net (fanout=1)        0.035   N53
+    SLICE_X0Y22.X        Tilo                  0.601   Inst_UART/Inst_uart_rx/estado_cmp_lt0001
                                                        Inst_UART/Inst_uart_rx/estado_cmp_lt00011
-    SLICE_X6Y10.G4       net (fanout=12)       1.356   Inst_UART/Inst_uart_rx/estado_cmp_lt0001
-    SLICE_X6Y10.Y        Tilo                  0.616   N25
-                                                       Inst_UART/Inst_uart_rx/info_0_mux000011
-    SLICE_X7Y8.G1        net (fanout=8)        0.481   Inst_UART/Inst_uart_rx/N4
-    SLICE_X7Y8.Y         Tilo                  0.561   Inst_UART/Inst_uart_rx/info_6_mux000034
-                                                       Inst_UART/Inst_uart_rx/info_4_mux000033
-    SLICE_X6Y8.SR        net (fanout=1)        0.941   Inst_UART/Inst_uart_rx/info_4_mux000033
-    SLICE_X6Y8.CLK       Tsrck                 0.433   Inst_UART/Inst_uart_rx/info<4>
-                                                       Inst_UART/Inst_uart_rx/info_4
+    SLICE_X6Y17.G3       net (fanout=14)       0.814   Inst_UART/Inst_uart_rx/estado_cmp_lt0001
+    SLICE_X6Y17.Y        Tilo                  0.616   Inst_UART/Inst_uart_rx/info_7_mux000021
+                                                       Inst_UART/Inst_uart_rx/info_0_mux0000111
+    SLICE_X5Y15.G1       net (fanout=8)        1.071   Inst_UART/Inst_uart_rx/N25
+    SLICE_X5Y15.Y        Tilo                  0.561   Inst_UART/Inst_uart_rx/info_3_mux000020
+                                                       Inst_UART/Inst_uart_rx/info_2_mux000016
+    SLICE_X4Y15.SR       net (fanout=1)        0.965   Inst_UART/Inst_uart_rx/info_2_mux000016
+    SLICE_X4Y15.CLK      Tsrck                 0.433   Inst_UART/Inst_uart_rx/info<2>
+                                                       Inst_UART/Inst_uart_rx/info_2
     -------------------------------------------------  ---------------------------
-    Total                                      7.731ns (3.253ns logic, 4.478ns route)
-                                                       (42.1% logic, 57.9% route)
+    Total                                      6.820ns (3.348ns logic, 3.472ns route)
+                                                       (49.1% logic, 50.9% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     76.131ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_UART/Inst_uart_rx/conteo_0 (FF)
-  Destination:          Inst_UART/Inst_uart_rx/info_4 (FF)
-  Requirement:          83.333ns
-  Data Path Delay:      7.163ns (Levels of Logic = 4)
-  Clock Path Skew:      -0.039ns (0.246 - 0.285)
-  Source Clock:         clk0 rising at 0.000ns
-  Destination Clock:    clk0 rising at 83.333ns
-  Clock Uncertainty:    0.000ns
-
-  Maximum Data Path: Inst_UART/Inst_uart_rx/conteo_0 to Inst_UART/Inst_uart_rx/info_4
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X3Y21.XQ       Tcko                  0.495   Inst_UART/Inst_uart_rx/conteo<0>
-                                                       Inst_UART/Inst_uart_rx/conteo_0
-    SLICE_X3Y25.G4       net (fanout=7)        0.641   Inst_UART/Inst_uart_rx/conteo<0>
-    SLICE_X3Y25.Y        Tilo                  0.561   N44
-                                                       Inst_UART/Inst_uart_rx/estado_cmp_lt00011_SW0
-    SLICE_X7Y22.G4       net (fanout=1)        0.517   N48
-    SLICE_X7Y22.Y        Tilo                  0.561   Inst_UART/Inst_uart_rx/N24
-                                                       Inst_UART/Inst_uart_rx/estado_cmp_lt00011
-    SLICE_X6Y10.G4       net (fanout=12)       1.356   Inst_UART/Inst_uart_rx/estado_cmp_lt0001
-    SLICE_X6Y10.Y        Tilo                  0.616   N25
-                                                       Inst_UART/Inst_uart_rx/info_0_mux000011
-    SLICE_X7Y8.G1        net (fanout=8)        0.481   Inst_UART/Inst_uart_rx/N4
-    SLICE_X7Y8.Y         Tilo                  0.561   Inst_UART/Inst_uart_rx/info_6_mux000034
-                                                       Inst_UART/Inst_uart_rx/info_4_mux000033
-    SLICE_X6Y8.SR        net (fanout=1)        0.941   Inst_UART/Inst_uart_rx/info_4_mux000033
-    SLICE_X6Y8.CLK       Tsrck                 0.433   Inst_UART/Inst_uart_rx/info<4>
-                                                       Inst_UART/Inst_uart_rx/info_4
-    -------------------------------------------------  ---------------------------
-    Total                                      7.163ns (3.227ns logic, 3.936ns route)
-                                                       (45.1% logic, 54.9% route)
-
---------------------------------------------------------------------------------
-Slack (setup path):     76.210ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_UART/Inst_uart_rx/conteo_4 (FF)
-  Destination:          Inst_UART/Inst_uart_rx/info_4 (FF)
-  Requirement:          83.333ns
-  Data Path Delay:      7.074ns (Levels of Logic = 4)
-  Clock Path Skew:      -0.049ns (0.246 - 0.295)
-  Source Clock:         clk0 rising at 0.000ns
-  Destination Clock:    clk0 rising at 83.333ns
-  Clock Uncertainty:    0.000ns
-
-  Maximum Data Path: Inst_UART/Inst_uart_rx/conteo_4 to Inst_UART/Inst_uart_rx/info_4
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X2Y24.YQ       Tcko                  0.596   Inst_UART/Inst_uart_rx/conteo<5>
-                                                       Inst_UART/Inst_uart_rx/conteo_4
-    SLICE_X3Y25.G3       net (fanout=5)        0.451   Inst_UART/Inst_uart_rx/conteo<4>
-    SLICE_X3Y25.Y        Tilo                  0.561   N44
-                                                       Inst_UART/Inst_uart_rx/estado_cmp_lt00011_SW0
-    SLICE_X7Y22.G4       net (fanout=1)        0.517   N48
-    SLICE_X7Y22.Y        Tilo                  0.561   Inst_UART/Inst_uart_rx/N24
-                                                       Inst_UART/Inst_uart_rx/estado_cmp_lt00011
-    SLICE_X6Y10.G4       net (fanout=12)       1.356   Inst_UART/Inst_uart_rx/estado_cmp_lt0001
-    SLICE_X6Y10.Y        Tilo                  0.616   N25
-                                                       Inst_UART/Inst_uart_rx/info_0_mux000011
-    SLICE_X7Y8.G1        net (fanout=8)        0.481   Inst_UART/Inst_uart_rx/N4
-    SLICE_X7Y8.Y         Tilo                  0.561   Inst_UART/Inst_uart_rx/info_6_mux000034
-                                                       Inst_UART/Inst_uart_rx/info_4_mux000033
-    SLICE_X6Y8.SR        net (fanout=1)        0.941   Inst_UART/Inst_uart_rx/info_4_mux000033
-    SLICE_X6Y8.CLK       Tsrck                 0.433   Inst_UART/Inst_uart_rx/info<4>
-                                                       Inst_UART/Inst_uart_rx/info_4
-    -------------------------------------------------  ---------------------------
-    Total                                      7.074ns (3.328ns logic, 3.746ns route)
-                                                       (47.0% logic, 53.0% route)
-
---------------------------------------------------------------------------------
-
-Paths for end point Inst_UART/Inst_uart_rx/info_2 (SLICE_X6Y14.SR), 12 paths
---------------------------------------------------------------------------------
-Slack (setup path):     75.571ns (requirement - (data path - clock path skew + uncertainty))
+Slack (setup path):     76.467ns (requirement - (data path - clock path skew + uncertainty))
   Source:               Inst_UART/Inst_uart_rx/conteo_2 (FF)
   Destination:          Inst_UART/Inst_uart_rx/info_2 (FF)
   Requirement:          83.333ns
-  Data Path Delay:      7.695ns (Levels of Logic = 4)
-  Clock Path Skew:      -0.067ns (0.225 - 0.292)
+  Data Path Delay:      6.812ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.054ns (0.228 - 0.282)
   Source Clock:         clk0 rising at 0.000ns
   Destination Clock:    clk0 rising at 83.333ns
   Clock Uncertainty:    0.000ns
@@ -657,34 +573,34 @@ Slack (setup path):     75.571ns (requirement - (data path - clock path skew + u
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X2Y22.XQ       Tcko                  0.521   Inst_UART/Inst_uart_rx/conteo<2>
+    SLICE_X2Y23.XQ       Tcko                  0.521   Inst_UART/Inst_uart_rx/conteo<2>
                                                        Inst_UART/Inst_uart_rx/conteo_2
-    SLICE_X3Y25.G1       net (fanout=6)        1.183   Inst_UART/Inst_uart_rx/conteo<2>
-    SLICE_X3Y25.Y        Tilo                  0.561   N44
+    SLICE_X0Y22.G2       net (fanout=6)        0.579   Inst_UART/Inst_uart_rx/conteo<2>
+    SLICE_X0Y22.Y        Tilo                  0.616   Inst_UART/Inst_uart_rx/estado_cmp_lt0001
                                                        Inst_UART/Inst_uart_rx/estado_cmp_lt00011_SW0
-    SLICE_X7Y22.G4       net (fanout=1)        0.517   N48
-    SLICE_X7Y22.Y        Tilo                  0.561   Inst_UART/Inst_uart_rx/N24
+    SLICE_X0Y22.F4       net (fanout=1)        0.035   N53
+    SLICE_X0Y22.X        Tilo                  0.601   Inst_UART/Inst_uart_rx/estado_cmp_lt0001
                                                        Inst_UART/Inst_uart_rx/estado_cmp_lt00011
-    SLICE_X6Y10.G4       net (fanout=12)       1.356   Inst_UART/Inst_uart_rx/estado_cmp_lt0001
-    SLICE_X6Y10.Y        Tilo                  0.616   N25
-                                                       Inst_UART/Inst_uart_rx/info_0_mux000011
-    SLICE_X6Y15.G2       net (fanout=8)        0.366   Inst_UART/Inst_uart_rx/N4
-    SLICE_X6Y15.Y        Tilo                  0.616   Inst_UART/Inst_uart_rx/info_0_mux000028
-                                                       Inst_UART/Inst_uart_rx/info_2_mux000033
-    SLICE_X6Y14.SR       net (fanout=1)        0.965   Inst_UART/Inst_uart_rx/info_2_mux000033
-    SLICE_X6Y14.CLK      Tsrck                 0.433   Inst_UART/Inst_uart_rx/info<2>
+    SLICE_X6Y17.G3       net (fanout=14)       0.814   Inst_UART/Inst_uart_rx/estado_cmp_lt0001
+    SLICE_X6Y17.Y        Tilo                  0.616   Inst_UART/Inst_uart_rx/info_7_mux000021
+                                                       Inst_UART/Inst_uart_rx/info_0_mux0000111
+    SLICE_X5Y15.G1       net (fanout=8)        1.071   Inst_UART/Inst_uart_rx/N25
+    SLICE_X5Y15.Y        Tilo                  0.561   Inst_UART/Inst_uart_rx/info_3_mux000020
+                                                       Inst_UART/Inst_uart_rx/info_2_mux000016
+    SLICE_X4Y15.SR       net (fanout=1)        0.965   Inst_UART/Inst_uart_rx/info_2_mux000016
+    SLICE_X4Y15.CLK      Tsrck                 0.433   Inst_UART/Inst_uart_rx/info<2>
                                                        Inst_UART/Inst_uart_rx/info_2
     -------------------------------------------------  ---------------------------
-    Total                                      7.695ns (3.308ns logic, 4.387ns route)
-                                                       (43.0% logic, 57.0% route)
+    Total                                      6.812ns (3.348ns logic, 3.464ns route)
+                                                       (49.1% logic, 50.9% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     76.146ns (requirement - (data path - clock path skew + uncertainty))
+Slack (setup path):     76.545ns (requirement - (data path - clock path skew + uncertainty))
   Source:               Inst_UART/Inst_uart_rx/conteo_0 (FF)
   Destination:          Inst_UART/Inst_uart_rx/info_2 (FF)
   Requirement:          83.333ns
-  Data Path Delay:      7.127ns (Levels of Logic = 4)
-  Clock Path Skew:      -0.060ns (0.225 - 0.285)
+  Data Path Delay:      6.734ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.054ns (0.228 - 0.282)
   Source Clock:         clk0 rising at 0.000ns
   Destination Clock:    clk0 rising at 83.333ns
   Clock Uncertainty:    0.000ns
@@ -693,173 +609,248 @@ Slack (setup path):     76.146ns (requirement - (data path - clock path skew + u
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X3Y21.XQ       Tcko                  0.495   Inst_UART/Inst_uart_rx/conteo<0>
+    SLICE_X2Y22.XQ       Tcko                  0.521   Inst_UART/Inst_uart_rx/conteo<0>
                                                        Inst_UART/Inst_uart_rx/conteo_0
-    SLICE_X3Y25.G4       net (fanout=7)        0.641   Inst_UART/Inst_uart_rx/conteo<0>
-    SLICE_X3Y25.Y        Tilo                  0.561   N44
+    SLICE_X0Y22.G4       net (fanout=7)        0.501   Inst_UART/Inst_uart_rx/conteo<0>
+    SLICE_X0Y22.Y        Tilo                  0.616   Inst_UART/Inst_uart_rx/estado_cmp_lt0001
                                                        Inst_UART/Inst_uart_rx/estado_cmp_lt00011_SW0
-    SLICE_X7Y22.G4       net (fanout=1)        0.517   N48
-    SLICE_X7Y22.Y        Tilo                  0.561   Inst_UART/Inst_uart_rx/N24
+    SLICE_X0Y22.F4       net (fanout=1)        0.035   N53
+    SLICE_X0Y22.X        Tilo                  0.601   Inst_UART/Inst_uart_rx/estado_cmp_lt0001
                                                        Inst_UART/Inst_uart_rx/estado_cmp_lt00011
-    SLICE_X6Y10.G4       net (fanout=12)       1.356   Inst_UART/Inst_uart_rx/estado_cmp_lt0001
-    SLICE_X6Y10.Y        Tilo                  0.616   N25
-                                                       Inst_UART/Inst_uart_rx/info_0_mux000011
-    SLICE_X6Y15.G2       net (fanout=8)        0.366   Inst_UART/Inst_uart_rx/N4
-    SLICE_X6Y15.Y        Tilo                  0.616   Inst_UART/Inst_uart_rx/info_0_mux000028
-                                                       Inst_UART/Inst_uart_rx/info_2_mux000033
-    SLICE_X6Y14.SR       net (fanout=1)        0.965   Inst_UART/Inst_uart_rx/info_2_mux000033
-    SLICE_X6Y14.CLK      Tsrck                 0.433   Inst_UART/Inst_uart_rx/info<2>
+    SLICE_X6Y17.G3       net (fanout=14)       0.814   Inst_UART/Inst_uart_rx/estado_cmp_lt0001
+    SLICE_X6Y17.Y        Tilo                  0.616   Inst_UART/Inst_uart_rx/info_7_mux000021
+                                                       Inst_UART/Inst_uart_rx/info_0_mux0000111
+    SLICE_X5Y15.G1       net (fanout=8)        1.071   Inst_UART/Inst_uart_rx/N25
+    SLICE_X5Y15.Y        Tilo                  0.561   Inst_UART/Inst_uart_rx/info_3_mux000020
+                                                       Inst_UART/Inst_uart_rx/info_2_mux000016
+    SLICE_X4Y15.SR       net (fanout=1)        0.965   Inst_UART/Inst_uart_rx/info_2_mux000016
+    SLICE_X4Y15.CLK      Tsrck                 0.433   Inst_UART/Inst_uart_rx/info<2>
                                                        Inst_UART/Inst_uart_rx/info_2
     -------------------------------------------------  ---------------------------
-    Total                                      7.127ns (3.282ns logic, 3.845ns route)
-                                                       (46.1% logic, 53.9% route)
+    Total                                      6.734ns (3.348ns logic, 3.386ns route)
+                                                       (49.7% logic, 50.3% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     76.225ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_UART/Inst_uart_rx/conteo_4 (FF)
-  Destination:          Inst_UART/Inst_uart_rx/info_2 (FF)
+
+Paths for end point Inst_UART/Inst_uart_rx/info_4 (SLICE_X4Y12.SR), 14 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     76.713ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_UART/Inst_uart_rx/conteo_1 (FF)
+  Destination:          Inst_UART/Inst_uart_rx/info_4 (FF)
   Requirement:          83.333ns
-  Data Path Delay:      7.038ns (Levels of Logic = 4)
-  Clock Path Skew:      -0.070ns (0.225 - 0.295)
+  Data Path Delay:      6.569ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.051ns (0.235 - 0.286)
   Source Clock:         clk0 rising at 0.000ns
   Destination Clock:    clk0 rising at 83.333ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: Inst_UART/Inst_uart_rx/conteo_4 to Inst_UART/Inst_uart_rx/info_2
+  Maximum Data Path: Inst_UART/Inst_uart_rx/conteo_1 to Inst_UART/Inst_uart_rx/info_4
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X2Y24.YQ       Tcko                  0.596   Inst_UART/Inst_uart_rx/conteo<5>
-                                                       Inst_UART/Inst_uart_rx/conteo_4
-    SLICE_X3Y25.G3       net (fanout=5)        0.451   Inst_UART/Inst_uart_rx/conteo<4>
-    SLICE_X3Y25.Y        Tilo                  0.561   N44
+    SLICE_X0Y24.XQ       Tcko                  0.521   Inst_UART/Inst_uart_rx/conteo<1>
+                                                       Inst_UART/Inst_uart_rx/conteo_1
+    SLICE_X0Y22.G1       net (fanout=6)        0.587   Inst_UART/Inst_uart_rx/conteo<1>
+    SLICE_X0Y22.Y        Tilo                  0.616   Inst_UART/Inst_uart_rx/estado_cmp_lt0001
                                                        Inst_UART/Inst_uart_rx/estado_cmp_lt00011_SW0
-    SLICE_X7Y22.G4       net (fanout=1)        0.517   N48
-    SLICE_X7Y22.Y        Tilo                  0.561   Inst_UART/Inst_uart_rx/N24
+    SLICE_X0Y22.F4       net (fanout=1)        0.035   N53
+    SLICE_X0Y22.X        Tilo                  0.601   Inst_UART/Inst_uart_rx/estado_cmp_lt0001
                                                        Inst_UART/Inst_uart_rx/estado_cmp_lt00011
-    SLICE_X6Y10.G4       net (fanout=12)       1.356   Inst_UART/Inst_uart_rx/estado_cmp_lt0001
-    SLICE_X6Y10.Y        Tilo                  0.616   N25
-                                                       Inst_UART/Inst_uart_rx/info_0_mux000011
-    SLICE_X6Y15.G2       net (fanout=8)        0.366   Inst_UART/Inst_uart_rx/N4
-    SLICE_X6Y15.Y        Tilo                  0.616   Inst_UART/Inst_uart_rx/info_0_mux000028
-                                                       Inst_UART/Inst_uart_rx/info_2_mux000033
-    SLICE_X6Y14.SR       net (fanout=1)        0.965   Inst_UART/Inst_uart_rx/info_2_mux000033
-    SLICE_X6Y14.CLK      Tsrck                 0.433   Inst_UART/Inst_uart_rx/info<2>
-                                                       Inst_UART/Inst_uart_rx/info_2
+    SLICE_X6Y17.G3       net (fanout=14)       0.814   Inst_UART/Inst_uart_rx/estado_cmp_lt0001
+    SLICE_X6Y17.Y        Tilo                  0.616   Inst_UART/Inst_uart_rx/info_7_mux000021
+                                                       Inst_UART/Inst_uart_rx/info_0_mux0000111
+    SLICE_X4Y13.G3       net (fanout=8)        0.789   Inst_UART/Inst_uart_rx/N25
+    SLICE_X4Y13.Y        Tilo                  0.616   Inst_UART/Inst_uart_rx/info_4_mux000016
+                                                       Inst_UART/Inst_uart_rx/info_4_mux000016
+    SLICE_X4Y12.SR       net (fanout=1)        0.941   Inst_UART/Inst_uart_rx/info_4_mux000016
+    SLICE_X4Y12.CLK      Tsrck                 0.433   Inst_UART/Inst_uart_rx/info<4>
+                                                       Inst_UART/Inst_uart_rx/info_4
     -------------------------------------------------  ---------------------------
-    Total                                      7.038ns (3.383ns logic, 3.655ns route)
-                                                       (48.1% logic, 51.9% route)
+    Total                                      6.569ns (3.403ns logic, 3.166ns route)
+                                                       (51.8% logic, 48.2% route)
 
 --------------------------------------------------------------------------------
-
-Paths for end point Inst_UART/Inst_uart_rx/info_0 (SLICE_X6Y12.SR), 12 paths
---------------------------------------------------------------------------------
-Slack (setup path):     75.893ns (requirement - (data path - clock path skew + uncertainty))
+Slack (setup path):     76.725ns (requirement - (data path - clock path skew + uncertainty))
   Source:               Inst_UART/Inst_uart_rx/conteo_2 (FF)
-  Destination:          Inst_UART/Inst_uart_rx/info_0 (FF)
+  Destination:          Inst_UART/Inst_uart_rx/info_4 (FF)
   Requirement:          83.333ns
-  Data Path Delay:      7.384ns (Levels of Logic = 4)
-  Clock Path Skew:      -0.056ns (0.236 - 0.292)
+  Data Path Delay:      6.561ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.047ns (0.235 - 0.282)
   Source Clock:         clk0 rising at 0.000ns
   Destination Clock:    clk0 rising at 83.333ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: Inst_UART/Inst_uart_rx/conteo_2 to Inst_UART/Inst_uart_rx/info_0
+  Maximum Data Path: Inst_UART/Inst_uart_rx/conteo_2 to Inst_UART/Inst_uart_rx/info_4
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X2Y22.XQ       Tcko                  0.521   Inst_UART/Inst_uart_rx/conteo<2>
+    SLICE_X2Y23.XQ       Tcko                  0.521   Inst_UART/Inst_uart_rx/conteo<2>
                                                        Inst_UART/Inst_uart_rx/conteo_2
-    SLICE_X3Y25.G1       net (fanout=6)        1.183   Inst_UART/Inst_uart_rx/conteo<2>
-    SLICE_X3Y25.Y        Tilo                  0.561   N44
+    SLICE_X0Y22.G2       net (fanout=6)        0.579   Inst_UART/Inst_uart_rx/conteo<2>
+    SLICE_X0Y22.Y        Tilo                  0.616   Inst_UART/Inst_uart_rx/estado_cmp_lt0001
                                                        Inst_UART/Inst_uart_rx/estado_cmp_lt00011_SW0
-    SLICE_X7Y22.G4       net (fanout=1)        0.517   N48
-    SLICE_X7Y22.Y        Tilo                  0.561   Inst_UART/Inst_uart_rx/N24
+    SLICE_X0Y22.F4       net (fanout=1)        0.035   N53
+    SLICE_X0Y22.X        Tilo                  0.601   Inst_UART/Inst_uart_rx/estado_cmp_lt0001
                                                        Inst_UART/Inst_uart_rx/estado_cmp_lt00011
-    SLICE_X6Y10.G4       net (fanout=12)       1.356   Inst_UART/Inst_uart_rx/estado_cmp_lt0001
-    SLICE_X6Y10.Y        Tilo                  0.616   N25
-                                                       Inst_UART/Inst_uart_rx/info_0_mux000011
-    SLICE_X6Y15.F2       net (fanout=8)        0.330   Inst_UART/Inst_uart_rx/N4
-    SLICE_X6Y15.X        Tilo                  0.601   Inst_UART/Inst_uart_rx/info_0_mux000028
-                                                       Inst_UART/Inst_uart_rx/info_0_mux000028
-    SLICE_X6Y12.SR       net (fanout=1)        0.705   Inst_UART/Inst_uart_rx/info_0_mux000028
-    SLICE_X6Y12.CLK      Tsrck                 0.433   Inst_UART/Inst_uart_rx/info<0>
-                                                       Inst_UART/Inst_uart_rx/info_0
+    SLICE_X6Y17.G3       net (fanout=14)       0.814   Inst_UART/Inst_uart_rx/estado_cmp_lt0001
+    SLICE_X6Y17.Y        Tilo                  0.616   Inst_UART/Inst_uart_rx/info_7_mux000021
+                                                       Inst_UART/Inst_uart_rx/info_0_mux0000111
+    SLICE_X4Y13.G3       net (fanout=8)        0.789   Inst_UART/Inst_uart_rx/N25
+    SLICE_X4Y13.Y        Tilo                  0.616   Inst_UART/Inst_uart_rx/info_4_mux000016
+                                                       Inst_UART/Inst_uart_rx/info_4_mux000016
+    SLICE_X4Y12.SR       net (fanout=1)        0.941   Inst_UART/Inst_uart_rx/info_4_mux000016
+    SLICE_X4Y12.CLK      Tsrck                 0.433   Inst_UART/Inst_uart_rx/info<4>
+                                                       Inst_UART/Inst_uart_rx/info_4
     -------------------------------------------------  ---------------------------
-    Total                                      7.384ns (3.293ns logic, 4.091ns route)
-                                                       (44.6% logic, 55.4% route)
+    Total                                      6.561ns (3.403ns logic, 3.158ns route)
+                                                       (51.9% logic, 48.1% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     76.468ns (requirement - (data path - clock path skew + uncertainty))
+Slack (setup path):     76.803ns (requirement - (data path - clock path skew + uncertainty))
   Source:               Inst_UART/Inst_uart_rx/conteo_0 (FF)
-  Destination:          Inst_UART/Inst_uart_rx/info_0 (FF)
+  Destination:          Inst_UART/Inst_uart_rx/info_4 (FF)
   Requirement:          83.333ns
-  Data Path Delay:      6.816ns (Levels of Logic = 4)
-  Clock Path Skew:      -0.049ns (0.236 - 0.285)
+  Data Path Delay:      6.483ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.047ns (0.235 - 0.282)
   Source Clock:         clk0 rising at 0.000ns
   Destination Clock:    clk0 rising at 83.333ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: Inst_UART/Inst_uart_rx/conteo_0 to Inst_UART/Inst_uart_rx/info_0
+  Maximum Data Path: Inst_UART/Inst_uart_rx/conteo_0 to Inst_UART/Inst_uart_rx/info_4
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X3Y21.XQ       Tcko                  0.495   Inst_UART/Inst_uart_rx/conteo<0>
+    SLICE_X2Y22.XQ       Tcko                  0.521   Inst_UART/Inst_uart_rx/conteo<0>
                                                        Inst_UART/Inst_uart_rx/conteo_0
-    SLICE_X3Y25.G4       net (fanout=7)        0.641   Inst_UART/Inst_uart_rx/conteo<0>
-    SLICE_X3Y25.Y        Tilo                  0.561   N44
+    SLICE_X0Y22.G4       net (fanout=7)        0.501   Inst_UART/Inst_uart_rx/conteo<0>
+    SLICE_X0Y22.Y        Tilo                  0.616   Inst_UART/Inst_uart_rx/estado_cmp_lt0001
                                                        Inst_UART/Inst_uart_rx/estado_cmp_lt00011_SW0
-    SLICE_X7Y22.G4       net (fanout=1)        0.517   N48
-    SLICE_X7Y22.Y        Tilo                  0.561   Inst_UART/Inst_uart_rx/N24
+    SLICE_X0Y22.F4       net (fanout=1)        0.035   N53
+    SLICE_X0Y22.X        Tilo                  0.601   Inst_UART/Inst_uart_rx/estado_cmp_lt0001
                                                        Inst_UART/Inst_uart_rx/estado_cmp_lt00011
-    SLICE_X6Y10.G4       net (fanout=12)       1.356   Inst_UART/Inst_uart_rx/estado_cmp_lt0001
-    SLICE_X6Y10.Y        Tilo                  0.616   N25
-                                                       Inst_UART/Inst_uart_rx/info_0_mux000011
-    SLICE_X6Y15.F2       net (fanout=8)        0.330   Inst_UART/Inst_uart_rx/N4
-    SLICE_X6Y15.X        Tilo                  0.601   Inst_UART/Inst_uart_rx/info_0_mux000028
-                                                       Inst_UART/Inst_uart_rx/info_0_mux000028
-    SLICE_X6Y12.SR       net (fanout=1)        0.705   Inst_UART/Inst_uart_rx/info_0_mux000028
-    SLICE_X6Y12.CLK      Tsrck                 0.433   Inst_UART/Inst_uart_rx/info<0>
-                                                       Inst_UART/Inst_uart_rx/info_0
+    SLICE_X6Y17.G3       net (fanout=14)       0.814   Inst_UART/Inst_uart_rx/estado_cmp_lt0001
+    SLICE_X6Y17.Y        Tilo                  0.616   Inst_UART/Inst_uart_rx/info_7_mux000021
+                                                       Inst_UART/Inst_uart_rx/info_0_mux0000111
+    SLICE_X4Y13.G3       net (fanout=8)        0.789   Inst_UART/Inst_uart_rx/N25
+    SLICE_X4Y13.Y        Tilo                  0.616   Inst_UART/Inst_uart_rx/info_4_mux000016
+                                                       Inst_UART/Inst_uart_rx/info_4_mux000016
+    SLICE_X4Y12.SR       net (fanout=1)        0.941   Inst_UART/Inst_uart_rx/info_4_mux000016
+    SLICE_X4Y12.CLK      Tsrck                 0.433   Inst_UART/Inst_uart_rx/info<4>
+                                                       Inst_UART/Inst_uart_rx/info_4
     -------------------------------------------------  ---------------------------
-    Total                                      6.816ns (3.267ns logic, 3.549ns route)
-                                                       (47.9% logic, 52.1% route)
+    Total                                      6.483ns (3.403ns logic, 3.080ns route)
+                                                       (52.5% logic, 47.5% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     76.547ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_UART/Inst_uart_rx/conteo_4 (FF)
-  Destination:          Inst_UART/Inst_uart_rx/info_0 (FF)
+
+Paths for end point Inst_UART/Inst_uart_rx/info_6 (SLICE_X5Y17.SR), 14 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     76.827ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_UART/Inst_uart_rx/conteo_1 (FF)
+  Destination:          Inst_UART/Inst_uart_rx/info_6 (FF)
   Requirement:          83.333ns
-  Data Path Delay:      6.727ns (Levels of Logic = 4)
-  Clock Path Skew:      -0.059ns (0.236 - 0.295)
+  Data Path Delay:      6.443ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.063ns (0.223 - 0.286)
   Source Clock:         clk0 rising at 0.000ns
   Destination Clock:    clk0 rising at 83.333ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: Inst_UART/Inst_uart_rx/conteo_4 to Inst_UART/Inst_uart_rx/info_0
+  Maximum Data Path: Inst_UART/Inst_uart_rx/conteo_1 to Inst_UART/Inst_uart_rx/info_6
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X2Y24.YQ       Tcko                  0.596   Inst_UART/Inst_uart_rx/conteo<5>
-                                                       Inst_UART/Inst_uart_rx/conteo_4
-    SLICE_X3Y25.G3       net (fanout=5)        0.451   Inst_UART/Inst_uart_rx/conteo<4>
-    SLICE_X3Y25.Y        Tilo                  0.561   N44
+    SLICE_X0Y24.XQ       Tcko                  0.521   Inst_UART/Inst_uart_rx/conteo<1>
+                                                       Inst_UART/Inst_uart_rx/conteo_1
+    SLICE_X0Y22.G1       net (fanout=6)        0.587   Inst_UART/Inst_uart_rx/conteo<1>
+    SLICE_X0Y22.Y        Tilo                  0.616   Inst_UART/Inst_uart_rx/estado_cmp_lt0001
                                                        Inst_UART/Inst_uart_rx/estado_cmp_lt00011_SW0
-    SLICE_X7Y22.G4       net (fanout=1)        0.517   N48
-    SLICE_X7Y22.Y        Tilo                  0.561   Inst_UART/Inst_uart_rx/N24
+    SLICE_X0Y22.F4       net (fanout=1)        0.035   N53
+    SLICE_X0Y22.X        Tilo                  0.601   Inst_UART/Inst_uart_rx/estado_cmp_lt0001
                                                        Inst_UART/Inst_uart_rx/estado_cmp_lt00011
-    SLICE_X6Y10.G4       net (fanout=12)       1.356   Inst_UART/Inst_uart_rx/estado_cmp_lt0001
-    SLICE_X6Y10.Y        Tilo                  0.616   N25
-                                                       Inst_UART/Inst_uart_rx/info_0_mux000011
-    SLICE_X6Y15.F2       net (fanout=8)        0.330   Inst_UART/Inst_uart_rx/N4
-    SLICE_X6Y15.X        Tilo                  0.601   Inst_UART/Inst_uart_rx/info_0_mux000028
-                                                       Inst_UART/Inst_uart_rx/info_0_mux000028
-    SLICE_X6Y12.SR       net (fanout=1)        0.705   Inst_UART/Inst_uart_rx/info_0_mux000028
-    SLICE_X6Y12.CLK      Tsrck                 0.433   Inst_UART/Inst_uart_rx/info<0>
-                                                       Inst_UART/Inst_uart_rx/info_0
+    SLICE_X6Y17.G3       net (fanout=14)       0.814   Inst_UART/Inst_uart_rx/estado_cmp_lt0001
+    SLICE_X6Y17.Y        Tilo                  0.616   Inst_UART/Inst_uart_rx/info_7_mux000021
+                                                       Inst_UART/Inst_uart_rx/info_0_mux0000111
+    SLICE_X4Y16.G4       net (fanout=8)        0.615   Inst_UART/Inst_uart_rx/N25
+    SLICE_X4Y16.Y        Tilo                  0.616   Inst_UART/Inst_uart_rx/info_1_mux000016
+                                                       Inst_UART/Inst_uart_rx/info_6_mux000020
+    SLICE_X5Y17.SR       net (fanout=1)        0.989   Inst_UART/Inst_uart_rx/info_6_mux000020
+    SLICE_X5Y17.CLK      Tsrck                 0.433   Inst_UART/Inst_uart_rx/info<6>
+                                                       Inst_UART/Inst_uart_rx/info_6
     -------------------------------------------------  ---------------------------
-    Total                                      6.727ns (3.368ns logic, 3.359ns route)
-                                                       (50.1% logic, 49.9% route)
+    Total                                      6.443ns (3.403ns logic, 3.040ns route)
+                                                       (52.8% logic, 47.2% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     76.839ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_UART/Inst_uart_rx/conteo_2 (FF)
+  Destination:          Inst_UART/Inst_uart_rx/info_6 (FF)
+  Requirement:          83.333ns
+  Data Path Delay:      6.435ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.059ns (0.223 - 0.282)
+  Source Clock:         clk0 rising at 0.000ns
+  Destination Clock:    clk0 rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Inst_UART/Inst_uart_rx/conteo_2 to Inst_UART/Inst_uart_rx/info_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X2Y23.XQ       Tcko                  0.521   Inst_UART/Inst_uart_rx/conteo<2>
+                                                       Inst_UART/Inst_uart_rx/conteo_2
+    SLICE_X0Y22.G2       net (fanout=6)        0.579   Inst_UART/Inst_uart_rx/conteo<2>
+    SLICE_X0Y22.Y        Tilo                  0.616   Inst_UART/Inst_uart_rx/estado_cmp_lt0001
+                                                       Inst_UART/Inst_uart_rx/estado_cmp_lt00011_SW0
+    SLICE_X0Y22.F4       net (fanout=1)        0.035   N53
+    SLICE_X0Y22.X        Tilo                  0.601   Inst_UART/Inst_uart_rx/estado_cmp_lt0001
+                                                       Inst_UART/Inst_uart_rx/estado_cmp_lt00011
+    SLICE_X6Y17.G3       net (fanout=14)       0.814   Inst_UART/Inst_uart_rx/estado_cmp_lt0001
+    SLICE_X6Y17.Y        Tilo                  0.616   Inst_UART/Inst_uart_rx/info_7_mux000021
+                                                       Inst_UART/Inst_uart_rx/info_0_mux0000111
+    SLICE_X4Y16.G4       net (fanout=8)        0.615   Inst_UART/Inst_uart_rx/N25
+    SLICE_X4Y16.Y        Tilo                  0.616   Inst_UART/Inst_uart_rx/info_1_mux000016
+                                                       Inst_UART/Inst_uart_rx/info_6_mux000020
+    SLICE_X5Y17.SR       net (fanout=1)        0.989   Inst_UART/Inst_uart_rx/info_6_mux000020
+    SLICE_X5Y17.CLK      Tsrck                 0.433   Inst_UART/Inst_uart_rx/info<6>
+                                                       Inst_UART/Inst_uart_rx/info_6
+    -------------------------------------------------  ---------------------------
+    Total                                      6.435ns (3.403ns logic, 3.032ns route)
+                                                       (52.9% logic, 47.1% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     76.917ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_UART/Inst_uart_rx/conteo_0 (FF)
+  Destination:          Inst_UART/Inst_uart_rx/info_6 (FF)
+  Requirement:          83.333ns
+  Data Path Delay:      6.357ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.059ns (0.223 - 0.282)
+  Source Clock:         clk0 rising at 0.000ns
+  Destination Clock:    clk0 rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Inst_UART/Inst_uart_rx/conteo_0 to Inst_UART/Inst_uart_rx/info_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X2Y22.XQ       Tcko                  0.521   Inst_UART/Inst_uart_rx/conteo<0>
+                                                       Inst_UART/Inst_uart_rx/conteo_0
+    SLICE_X0Y22.G4       net (fanout=7)        0.501   Inst_UART/Inst_uart_rx/conteo<0>
+    SLICE_X0Y22.Y        Tilo                  0.616   Inst_UART/Inst_uart_rx/estado_cmp_lt0001
+                                                       Inst_UART/Inst_uart_rx/estado_cmp_lt00011_SW0
+    SLICE_X0Y22.F4       net (fanout=1)        0.035   N53
+    SLICE_X0Y22.X        Tilo                  0.601   Inst_UART/Inst_uart_rx/estado_cmp_lt0001
+                                                       Inst_UART/Inst_uart_rx/estado_cmp_lt00011
+    SLICE_X6Y17.G3       net (fanout=14)       0.814   Inst_UART/Inst_uart_rx/estado_cmp_lt0001
+    SLICE_X6Y17.Y        Tilo                  0.616   Inst_UART/Inst_uart_rx/info_7_mux000021
+                                                       Inst_UART/Inst_uart_rx/info_0_mux0000111
+    SLICE_X4Y16.G4       net (fanout=8)        0.615   Inst_UART/Inst_uart_rx/N25
+    SLICE_X4Y16.Y        Tilo                  0.616   Inst_UART/Inst_uart_rx/info_1_mux000016
+                                                       Inst_UART/Inst_uart_rx/info_6_mux000020
+    SLICE_X5Y17.SR       net (fanout=1)        0.989   Inst_UART/Inst_uart_rx/info_6_mux000020
+    SLICE_X5Y17.CLK      Tsrck                 0.433   Inst_UART/Inst_uart_rx/info<6>
+                                                       Inst_UART/Inst_uart_rx/info_6
+    -------------------------------------------------  ---------------------------
+    Total                                      6.357ns (3.403ns logic, 2.954ns route)
+                                                       (53.5% logic, 46.5% route)
 
 --------------------------------------------------------------------------------
 
@@ -869,84 +860,84 @@ Hold Paths: PERIOD analysis for net "Inst_vga/Inst_clock25/CLK0_BUF" derived fro
 
 --------------------------------------------------------------------------------
 
-Paths for end point ram0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s3a_init.ram/dpram.ram (RAMB16_X0Y1.DIA1), 1 path
+Paths for end point ram0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s3a_init.ram/dpram.ram (RAMB16_X0Y1.WEA1), 1 path
 --------------------------------------------------------------------------------
-Slack (hold path):      0.856ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               Inst_UART/Inst_uart_rx/salida_datos_5 (FF)
+Slack (hold path):      0.853ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               Inst_generador_direccion/escritura_0 (FF)
   Destination:          ram0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s3a_init.ram/dpram.ram (RAM)
   Requirement:          0.000ns
-  Data Path Delay:      0.903ns (Levels of Logic = 0)
-  Clock Path Skew:      0.047ns (0.456 - 0.409)
+  Data Path Delay:      0.916ns (Levels of Logic = 0)
+  Clock Path Skew:      0.063ns (0.456 - 0.393)
   Source Clock:         clk0 rising at 83.333ns
   Destination Clock:    clk0 rising at 83.333ns
   Clock Uncertainty:    0.000ns
 
-  Minimum Data Path: Inst_UART/Inst_uart_rx/salida_datos_5 to ram0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s3a_init.ram/dpram.ram
+  Minimum Data Path: Inst_generador_direccion/escritura_0 to ram0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s3a_init.ram/dpram.ram
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X12Y8.XQ       Tcko                  0.417   Inst_UART/Inst_uart_rx/salida_datos<5>
-                                                       Inst_UART/Inst_uart_rx/salida_datos_5
-    RAMB16_X0Y1.DIA1     net (fanout=1)        0.486   Inst_UART/Inst_uart_rx/salida_datos<5>
-    RAMB16_X0Y1.CLKA     Trckd_DIA   (-Th)     0.000   ram0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s3a_init.ram/dpram.ram
+    SLICE_X15Y7.YQ       Tcko                  0.419   Inst_generador_direccion/escritura<0>
+                                                       Inst_generador_direccion/escritura_0
+    RAMB16_X0Y1.WEA1     net (fanout=8)        0.497   Inst_generador_direccion/escritura<0>
+    RAMB16_X0Y1.CLKA     Trckc_WEA   (-Th)     0.000   ram0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s3a_init.ram/dpram.ram
                                                        ram0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s3a_init.ram/dpram.ram
     -------------------------------------------------  ---------------------------
-    Total                                      0.903ns (0.417ns logic, 0.486ns route)
-                                                       (46.2% logic, 53.8% route)
+    Total                                      0.916ns (0.419ns logic, 0.497ns route)
+                                                       (45.7% logic, 54.3% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point ram0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s3a_init.ram/dpram.ram (RAMB16_X0Y1.DIA0), 1 path
+Paths for end point ram0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s3a_init.ram/dpram.ram (RAMB16_X0Y1.WEA0), 1 path
 --------------------------------------------------------------------------------
-Slack (hold path):      0.883ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               Inst_UART/Inst_uart_rx/salida_datos_4 (FF)
+Slack (hold path):      0.921ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               Inst_generador_direccion/escritura_0 (FF)
   Destination:          ram0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s3a_init.ram/dpram.ram (RAM)
   Requirement:          0.000ns
-  Data Path Delay:      0.930ns (Levels of Logic = 0)
-  Clock Path Skew:      0.047ns (0.456 - 0.409)
+  Data Path Delay:      0.984ns (Levels of Logic = 0)
+  Clock Path Skew:      0.063ns (0.456 - 0.393)
   Source Clock:         clk0 rising at 83.333ns
   Destination Clock:    clk0 rising at 83.333ns
   Clock Uncertainty:    0.000ns
 
-  Minimum Data Path: Inst_UART/Inst_uart_rx/salida_datos_4 to ram0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s3a_init.ram/dpram.ram
+  Minimum Data Path: Inst_generador_direccion/escritura_0 to ram0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s3a_init.ram/dpram.ram
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X12Y8.YQ       Tcko                  0.477   Inst_UART/Inst_uart_rx/salida_datos<5>
-                                                       Inst_UART/Inst_uart_rx/salida_datos_4
-    RAMB16_X0Y1.DIA0     net (fanout=1)        0.453   Inst_UART/Inst_uart_rx/salida_datos<4>
-    RAMB16_X0Y1.CLKA     Trckd_DIA   (-Th)     0.000   ram0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s3a_init.ram/dpram.ram
+    SLICE_X15Y7.YQ       Tcko                  0.419   Inst_generador_direccion/escritura<0>
+                                                       Inst_generador_direccion/escritura_0
+    RAMB16_X0Y1.WEA0     net (fanout=8)        0.565   Inst_generador_direccion/escritura<0>
+    RAMB16_X0Y1.CLKA     Trckc_WEA   (-Th)     0.000   ram0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s3a_init.ram/dpram.ram
                                                        ram0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s3a_init.ram/dpram.ram
     -------------------------------------------------  ---------------------------
-    Total                                      0.930ns (0.477ns logic, 0.453ns route)
-                                                       (51.3% logic, 48.7% route)
+    Total                                      0.984ns (0.419ns logic, 0.565ns route)
+                                                       (42.6% logic, 57.4% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point Inst_UART/Inst_uart_rx/salida_datos_7 (SLICE_X13Y8.BX), 1 path
+Paths for end point ram0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s3a_init.ram/dpram.ram (RAMB16_X0Y1.WEA2), 1 path
 --------------------------------------------------------------------------------
-Slack (hold path):      0.948ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               Inst_UART/Inst_uart_rx/info_7 (FF)
-  Destination:          Inst_UART/Inst_uart_rx/salida_datos_7 (FF)
+Slack (hold path):      0.936ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               Inst_generador_direccion/escritura_0 (FF)
+  Destination:          ram0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s3a_init.ram/dpram.ram (RAM)
   Requirement:          0.000ns
-  Data Path Delay:      0.960ns (Levels of Logic = 0)
-  Clock Path Skew:      0.012ns (0.254 - 0.242)
+  Data Path Delay:      0.999ns (Levels of Logic = 0)
+  Clock Path Skew:      0.063ns (0.456 - 0.393)
   Source Clock:         clk0 rising at 83.333ns
   Destination Clock:    clk0 rising at 83.333ns
   Clock Uncertainty:    0.000ns
 
-  Minimum Data Path: Inst_UART/Inst_uart_rx/info_7 to Inst_UART/Inst_uart_rx/salida_datos_7
+  Minimum Data Path: Inst_generador_direccion/escritura_0 to ram0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s3a_init.ram/dpram.ram
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X7Y11.XQ       Tcko                  0.396   Inst_UART/Inst_uart_rx/info<7>
-                                                       Inst_UART/Inst_uart_rx/info_7
-    SLICE_X13Y8.BX       net (fanout=3)        0.502   Inst_UART/Inst_uart_rx/info<7>
-    SLICE_X13Y8.CLK      Tckdi       (-Th)    -0.062   Inst_UART/Inst_uart_rx/salida_datos<7>
-                                                       Inst_UART/Inst_uart_rx/salida_datos_7
+    SLICE_X15Y7.YQ       Tcko                  0.419   Inst_generador_direccion/escritura<0>
+                                                       Inst_generador_direccion/escritura_0
+    RAMB16_X0Y1.WEA2     net (fanout=8)        0.580   Inst_generador_direccion/escritura<0>
+    RAMB16_X0Y1.CLKA     Trckc_WEA   (-Th)     0.000   ram0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s3a_init.ram/dpram.ram
+                                                       ram0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s3a_init.ram/dpram.ram
     -------------------------------------------------  ---------------------------
-    Total                                      0.960ns (0.458ns logic, 0.502ns route)
-                                                       (47.7% logic, 52.3% route)
+    Total                                      0.999ns (0.419ns logic, 0.580ns route)
+                                                       (41.9% logic, 58.1% route)
 
 --------------------------------------------------------------------------------
 
@@ -988,10 +979,10 @@ Derived Constraints for CLKIN_IBUFG_OUT_OBUF
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|CLKIN_IBUFG_OUT_OBUF           |     83.333ns|     20.000ns|     11.273ns|            0|            0|            0|         1231|
-| Inst_vga/Inst_clock25/CLKFX_BU|     40.000ns|      5.411ns|          N/A|            0|            0|          238|            0|
+|CLKIN_IBUFG_OUT_OBUF           |     83.333ns|     20.000ns|     10.460ns|            0|            0|            0|         1488|
+| Inst_vga/Inst_clock25/CLKFX_BU|     40.000ns|      5.021ns|          N/A|            0|            0|          238|            0|
 | F                             |             |             |             |             |             |             |             |
-| Inst_vga/Inst_clock25/CLK0_BUF|     83.333ns|      7.777ns|          N/A|            0|            0|          993|            0|
+| Inst_vga/Inst_clock25/CLK0_BUF|     83.333ns|      6.878ns|          N/A|            0|            0|         1250|            0|
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
 All constraints were met.
@@ -1006,7 +997,7 @@ Clock to Setup on destination clock clk_g
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk_g          |    7.777|         |         |         |
+clk_g          |    6.878|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
@@ -1015,7 +1006,7 @@ Timing summary:
 
 Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
 
-Constraints cover 1231 paths, 0 nets, and 558 connections
+Constraints cover 1488 paths, 0 nets, and 645 connections
 
 Design statistics:
    Minimum period:  20.000ns{1}   (Maximum frequency:  50.000MHz)
@@ -1024,14 +1015,14 @@ Design statistics:
 ------------------------------------Footnotes-----------------------------------
 1)  The minimum period statistic assumes all single cycle delays.
 
-Analysis completed Mon May  2 22:39:05 2022 
+Analysis completed Wed May  4 03:48:02 2022 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 368 MB
+Peak Memory Usage: 369 MB
 
 
 

@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="Map" timeStamp="Mon May  2 22:38:52 2022">
+  <application stringID="Map" timeStamp="Wed May  4 03:47:50 2022">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -24,7 +24,7 @@
         </row>
         <row stringID="row" value="3">
           <item stringID="variable" value="PATH"/>
-          <item stringID="value" value="/opt/Xilinx/14.7/ISE_DS/ISE//bin/lin64:/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64:/opt/Xilinx/14.7/ISE_DS/ISE/sysgen/util:/opt/Xilinx/14.7/ISE_DS/ISE/sysgen/bin:/opt/Xilinx/14.7/ISE_DS/ISE/../../../DocNav:/opt/Xilinx/14.7/ISE_DS/PlanAhead/bin:/opt/Xilinx/14.7/ISE_DS/EDK/bin/lin64:/opt/Xilinx/14.7/ISE_DS/EDK/gnu/microblaze/lin/bin:/opt/Xilinx/14.7/ISE_DS/EDK/gnu/powerpc-eabi/lin/bin:/opt/Xilinx/14.7/ISE_DS/EDK/gnu/arm/lin/bin:/opt/Xilinx/14.7/ISE_DS/EDK/gnu/microblaze/linux_toolchain/lin64_be/bin:/opt/Xilinx/14.7/ISE_DS/EDK/gnu/microblaze/linux_toolchain/lin64_le/bin:/opt/Xilinx/14.7/ISE_DS/common/bin/lin64:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/ise/bin"/>
+          <item stringID="value" value="/opt/Xilinx/14.7/ISE_DS/ISE//bin/lin64:/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64:/opt/Xilinx/14.7/ISE_DS/ISE/sysgen/util:/opt/Xilinx/14.7/ISE_DS/ISE/sysgen/bin:/opt/Xilinx/14.7/ISE_DS/ISE/../../../DocNav:/opt/Xilinx/14.7/ISE_DS/PlanAhead/bin:/opt/Xilinx/14.7/ISE_DS/EDK/bin/lin64:/opt/Xilinx/14.7/ISE_DS/EDK/gnu/microblaze/lin/bin:/opt/Xilinx/14.7/ISE_DS/EDK/gnu/powerpc-eabi/lin/bin:/opt/Xilinx/14.7/ISE_DS/EDK/gnu/arm/lin/bin:/opt/Xilinx/14.7/ISE_DS/EDK/gnu/microblaze/linux_toolchain/lin64_be/bin:/opt/Xilinx/14.7/ISE_DS/EDK/gnu/microblaze/linux_toolchain/lin64_le/bin:/opt/Xilinx/14.7/ISE_DS/common/bin/lin64:/usr/bin:/bin"/>
         </row>
         <row stringID="row" value="4">
           <item stringID="variable" value="LMC_HOME"/>
@@ -73,26 +73,26 @@
         <item dataType="int" stringID="MAP_NUM_ERRORS" value="0"/>
         <item dataType="int" stringID="MAP_FILTERED_WARNINGS" value="0"/>
         <item dataType="int" stringID="MAP_NUM_WARNINGS" value="0"/>
-        <item UNITS="KB" dataType="int" stringID="MAP_PEAK_MEMORY" value="724780"/>
+        <item UNITS="KB" dataType="int" stringID="MAP_PEAK_MEMORY" value="628060"/>
         <item stringID="MAP_TOTAL_REAL_TIME" value="2 secs "/>
         <item stringID="MAP_TOTAL_CPU_TIME" value="2 secs "/>
       </section>
       <section stringID="MAP_SLICE_REPORTING">
-        <item AVAILABLE="1408" dataType="int" label="Number of Slice Flip Flops" stringID="MAP_NUM_SLICE_FF" value="110"/>
-        <item AVAILABLE="1408" dataType="int" label="Number of 4 input LUTs" stringID="MAP_NUM_4_INPUT_LUT" value="229">
+        <item AVAILABLE="1408" dataType="int" label="Number of Slice Flip Flops" stringID="MAP_NUM_SLICE_FF" value="129"/>
+        <item AVAILABLE="1408" dataType="int" label="Number of 4 input LUTs" stringID="MAP_NUM_4_INPUT_LUT" value="250">
           <item dataType="int" label="Number of route-thrus" stringID="MAP_NUM_LUT_RT" value="29"/>
         </item>
-        <item AVAILABLE="704" dataType="int" label="Number of occupied Slices" stringID="MAP_OCCUPIED_SLICES" value="127">
+        <item AVAILABLE="704" dataType="int" label="Number of occupied Slices" stringID="MAP_OCCUPIED_SLICES" value="142">
           <item dataType="int" label="Number of Slices containing unrelated logic" stringID="MAP_NUM_SLICE_UNRELATED" value="0"/>
         </item>
       </section>
       <section stringID="MAP_IOB_REPORTING">
         <section stringID="MAP_IOB_DATA">
-          <item AVAILABLE="108" dataType="int" stringID="MAP_AGG_BONDED_IO" value="25"/>
+          <item AVAILABLE="108" dataType="int" stringID="MAP_AGG_BONDED_IO" value="24"/>
         </section>
       </section>
       <section stringID="MAP_HARD_IP_REPORTING">
-        <item AVAILABLE="24" dataType="int" label="Number of BUFGMUXs" stringID="MAP_NUM_BUFGMUX" value="2"/>
+        <item AVAILABLE="24" dataType="int" label="Number of BUFGMUXs" stringID="MAP_NUM_BUFGMUX" value="3"/>
         <item AVAILABLE="2" dataType="int" stringID="MAP_NUM_DCM" value="1"/>
       </section>
       <section stringID="MAP_MACRO_RPM_REPORTING">
@@ -289,16 +289,6 @@
             <item label="Suspend" stringID="SUSPEND" value="3STATE"/>
           </row>
           <row stringID="row" value="21">
-            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="ocupado_ram"/>
-            <item stringID="Type" value="IOB"/>
-            <item stringID="Direction" value="OUTPUT"/>
-            <item label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD" value="LVCMOS33"/>
-            <item label="Drive&#xA;Strength" stringID="DRIVE_STRENGTH" value="12"/>
-            <item label="Slew&#xA;Rate" stringID="SLEW_RATE" value="SLOW"/>
-            <item label="IBUF/IFD&#xA;Delay" stringID="IBUF_IFD_DELAY" value="0 / 0"/>
-            <item label="Suspend" stringID="SUSPEND" value="3STATE"/>
-          </row>
-          <row stringID="row" value="22">
             <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="red&lt;0>"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="OUTPUT"/>
@@ -308,7 +298,7 @@
             <item label="IBUF/IFD&#xA;Delay" stringID="IBUF_IFD_DELAY" value="0 / 0"/>
             <item label="Suspend" stringID="SUSPEND" value="3STATE"/>
           </row>
-          <row stringID="row" value="23">
+          <row stringID="row" value="22">
             <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="red&lt;1>"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="OUTPUT"/>
@@ -318,7 +308,7 @@
             <item label="IBUF/IFD&#xA;Delay" stringID="IBUF_IFD_DELAY" value="0 / 0"/>
             <item label="Suspend" stringID="SUSPEND" value="3STATE"/>
           </row>
-          <row stringID="row" value="24">
+          <row stringID="row" value="23">
             <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="red&lt;2>"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="OUTPUT"/>
@@ -328,7 +318,7 @@
             <item label="IBUF/IFD&#xA;Delay" stringID="IBUF_IFD_DELAY" value="0 / 0"/>
             <item label="Suspend" stringID="SUSPEND" value="3STATE"/>
           </row>
-          <row stringID="row" value="25">
+          <row stringID="row" value="24">
             <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="vsync"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="OUTPUT"/>
@@ -374,54 +364,54 @@
         <item stringID="MAP_INITP_05" value="0000000000000000000000000000000000000000000000000000000000000000"/>
         <item stringID="MAP_INITP_06" value="0000000000000000000000000000000000000000000000000000000000000000"/>
         <item stringID="MAP_INITP_07" value="0000000000000000000000000000000000000000000000000000000000000000"/>
-        <item stringID="MAP_INIT_00" value="FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"/>
-        <item stringID="MAP_INIT_01" value="FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"/>
-        <item stringID="MAP_INIT_02" value="FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"/>
-        <item stringID="MAP_INIT_03" value="FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"/>
-        <item stringID="MAP_INIT_04" value="FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"/>
-        <item stringID="MAP_INIT_05" value="FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"/>
-        <item stringID="MAP_INIT_06" value="FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"/>
-        <item stringID="MAP_INIT_07" value="FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"/>
-        <item stringID="MAP_INIT_08" value="FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"/>
-        <item stringID="MAP_INIT_09" value="FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"/>
-        <item stringID="MAP_INIT_0A" value="FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"/>
-        <item stringID="MAP_INIT_0B" value="FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"/>
-        <item stringID="MAP_INIT_0C" value="FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"/>
-        <item stringID="MAP_INIT_0D" value="FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"/>
-        <item stringID="MAP_INIT_0E" value="FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"/>
-        <item stringID="MAP_INIT_0F" value="FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"/>
-        <item stringID="MAP_INIT_10" value="FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"/>
-        <item stringID="MAP_INIT_11" value="FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"/>
-        <item stringID="MAP_INIT_12" value="FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"/>
-        <item stringID="MAP_INIT_13" value="FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"/>
-        <item stringID="MAP_INIT_14" value="FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"/>
-        <item stringID="MAP_INIT_15" value="FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"/>
-        <item stringID="MAP_INIT_16" value="FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"/>
-        <item stringID="MAP_INIT_17" value="FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"/>
-        <item stringID="MAP_INIT_18" value="FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"/>
-        <item stringID="MAP_INIT_19" value="FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"/>
-        <item stringID="MAP_INIT_1A" value="FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"/>
-        <item stringID="MAP_INIT_1B" value="FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"/>
-        <item stringID="MAP_INIT_1C" value="FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"/>
-        <item stringID="MAP_INIT_1D" value="FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"/>
-        <item stringID="MAP_INIT_1E" value="FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"/>
-        <item stringID="MAP_INIT_1F" value="000000000000000000000000000000000000000000000000FFFFFFFFFFFFFFFF"/>
-        <item stringID="MAP_INIT_20" value="0000000000000000000000000000000000000000000000000000000000000000"/>
-        <item stringID="MAP_INIT_21" value="0000000000000000000000000000000000000000000000000000000000000000"/>
-        <item stringID="MAP_INIT_22" value="0000000000000000000000000000000000000000000000000000000000000000"/>
-        <item stringID="MAP_INIT_23" value="0000000000000000000000000000000000000000000000000000000000000000"/>
-        <item stringID="MAP_INIT_24" value="0000000000000000000000000000000000000000000000000000000000000000"/>
-        <item stringID="MAP_INIT_25" value="0000000000000000000000000000000000000000000000000000000000000000"/>
-        <item stringID="MAP_INIT_26" value="0000000000000000000000000000000000000000000000000000000000000000"/>
-        <item stringID="MAP_INIT_27" value="0000000000000000000000000000000000000000000000000000000000000000"/>
-        <item stringID="MAP_INIT_28" value="0000000000000000000000000000000000000000000000000000000000000000"/>
-        <item stringID="MAP_INIT_29" value="0000000000000000000000000000000000000000000000000000000000000000"/>
-        <item stringID="MAP_INIT_2A" value="0000000000000000000000000000000000000000000000000000000000000000"/>
-        <item stringID="MAP_INIT_2B" value="0000000000000000000000000000000000000000000000000000000000000000"/>
-        <item stringID="MAP_INIT_2C" value="0000000000000000000000000000000000000000000000000000000000000000"/>
-        <item stringID="MAP_INIT_2D" value="0000000000000000000000000000000000000000000000000000000000000000"/>
-        <item stringID="MAP_INIT_2E" value="0000000000000000000000000000000000000000000000000000000000000000"/>
-        <item stringID="MAP_INIT_2F" value="F000000000000000000000000000000000000000000000000000000000000000"/>
+        <item stringID="MAP_INIT_00" value="0000020002022222202000002200000000020000000000000000004000020000"/>
+        <item stringID="MAP_INIT_01" value="0200200000222244202200000200000000000000000000200000060B22F02902"/>
+        <item stringID="MAP_INIT_02" value="20040000000222222240000020200000000000000000002000000F0002F02022"/>
+        <item stringID="MAP_INIT_03" value="0040000000022222240000000002000200000020000000000002002000002220"/>
+        <item stringID="MAP_INIT_04" value="0200020000042620240000000000000000000000000000000000040000002222"/>
+        <item stringID="MAP_INIT_05" value="4000000000202200440020000000002000007000000000200200000000002242"/>
+        <item stringID="MAP_INIT_06" value="0000000000000000662200020000020000200000000000000000000002022222"/>
+        <item stringID="MAP_INIT_07" value="0000000000000002444000220000220002000000000000000000000004022222"/>
+        <item stringID="MAP_INIT_08" value="0000000000000002242000200000000000000000000000002000000220222220"/>
+        <item stringID="MAP_INIT_09" value="0000000000000000220000000002200000000000000000000B22000222222204"/>
+        <item stringID="MAP_INIT_0A" value="0000000000000000420002002000002000000000000000000002246000224424"/>
+        <item stringID="MAP_INIT_0B" value="0000020000000000240002000000000000000000000000000002022000224204"/>
+        <item stringID="MAP_INIT_0C" value="0000000000000000240022000000200000000000000000000000000220026220"/>
+        <item stringID="MAP_INIT_0D" value="0000000000000000240026000000000000000000000000000000000222220204"/>
+        <item stringID="MAP_INIT_0E" value="0000000200002200240240000020000000000000000000000000000020224204"/>
+        <item stringID="MAP_INIT_0F" value="0002000000000200042420000000000000020000000000000000000000022202"/>
+        <item stringID="MAP_INIT_10" value="4222000000000000222200000200000020000000000000000000000020000400"/>
+        <item stringID="MAP_INIT_11" value="4620000000000000420000000200000000000000000000000000000000000200"/>
+        <item stringID="MAP_INIT_12" value="0220020000000000222000202000000000000000000000000000000000000200"/>
+        <item stringID="MAP_INIT_13" value="00202000000000002220000200000000000000000000000000000000000000B0"/>
+        <item stringID="MAP_INIT_14" value="0022200000200000242000000000000002000000000000000000000000022400"/>
+        <item stringID="MAP_INIT_15" value="0002000020000000222220000000000000000000000000000000000000400262"/>
+        <item stringID="MAP_INIT_16" value="2002000000020000220000242242200000000000000000000000040000000020"/>
+        <item stringID="MAP_INIT_17" value="2002220000000000000202224222220000002002000000000020000000022220"/>
+        <item stringID="MAP_INIT_18" value="0000222002000000000000020022222424200000000000000000200000020200"/>
+        <item stringID="MAP_INIT_19" value="0002022022000000000000000040022000242040000000000000000000202002"/>
+        <item stringID="MAP_INIT_1A" value="0020000000000000000020000000020000402202000000000000000000020000"/>
+        <item stringID="MAP_INIT_1B" value="0020002202000000000000000000000000204000200000000002000200000000"/>
+        <item stringID="MAP_INIT_1C" value="0000002200000000000000000000220020000020022002200220007422002000"/>
+        <item stringID="MAP_INIT_1D" value="0200000220000000200000000000040000000000000000020222000020200000"/>
+        <item stringID="MAP_INIT_1E" value="0200000220000000000000000000000000000000000000492220000002004000"/>
+        <item stringID="MAP_INIT_1F" value="2220000200020000000002000000000000400000000000000222000002020000"/>
+        <item stringID="MAP_INIT_20" value="6422000022000000000002020000000000004020000000000004227000002000"/>
+        <item stringID="MAP_INIT_21" value="8422000022000000000000000020000000000000000000000000000000200000"/>
+        <item stringID="MAP_INIT_22" value="46220000220000000000000020002B0000200000000000000000022000220024"/>
+        <item stringID="MAP_INIT_23" value="6462600022000000000000000000000000000000002000000000000000020072"/>
+        <item stringID="MAP_INIT_24" value="6662000022000000000000000000000002000000000040000000009002252220"/>
+        <item stringID="MAP_INIT_25" value="6684200022400000000000000000020000240000000000200020072002220524"/>
+        <item stringID="MAP_INIT_26" value="2024420022420002000000000000000000002000000002000000502005300000"/>
+        <item stringID="MAP_INIT_27" value="0000842002440000000000000000000000000000000000000000002000202550"/>
+        <item stringID="MAP_INIT_28" value="0000462024642000200000000000000000022000000000000000000252200200"/>
+        <item stringID="MAP_INIT_29" value="00002A6202462000420000000000000000000400000000000002020000320000"/>
+        <item stringID="MAP_INIT_2A" value="0000028420220020020000000000000000002400220000000000000000250000"/>
+        <item stringID="MAP_INIT_2B" value="400002C842222000200200000000000000000000022000000000250022052207"/>
+        <item stringID="MAP_INIT_2C" value="0000002664442000002000000000000000000000000000002000202020022020"/>
+        <item stringID="MAP_INIT_2D" value="0000002486462000022240000000000000000000000000000000002900022003"/>
+        <item stringID="MAP_INIT_2E" value="4200000288664000000222000400000000000000000000000020004220077502"/>
+        <item stringID="MAP_INIT_2F" value="220000004A842000002220202202022020020000000000000020002407250522"/>
         <item stringID="MAP_INIT_30" value="0000000000000000000000000000000000000000000000000000000000000000"/>
         <item stringID="MAP_INIT_31" value="0000000000000000000000000000000000000000000000000000000000000000"/>
         <item stringID="MAP_INIT_32" value="0000000000000000000000000000000000000000000000000000000000000000"/>

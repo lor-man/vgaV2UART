@@ -1,0 +1,5 @@
+set -tmpdir "/home/ise/ise_vm/VGARAM/PE6/xst/projnav.tmp"
+set -xsthdpdir "/home/ise/ise_vm/VGARAM/PE6/xst"
+elaborate
+-ifn generador_direccion.prj
+-ifmt mixed

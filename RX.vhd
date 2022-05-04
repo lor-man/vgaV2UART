@@ -68,20 +68,24 @@ begin
 									indice <= indice + 1;
 									estado <= data;
 								else
+									ocupado_bandera<="1";
+									salida_datos<=info;
 									conteo <= 0;
 									estado <= stop;
 								end if;
 							end if;
 						when stop =>
-							ocupado_bandera <= "1";
+							
 							if (conteo < tiempo_bit-1) then
+								ocupado_bandera <= "1";
 								conteo <= conteo + 1;
+								salida_datos <= info;
 								estado <= stop;
 							else
 								if (pinRX = '1') then
 									conteo <= 0;
 									salida_datos <= info;
-									--ocupado_bandera <= '1';
+									ocupado_bandera <= "0";
 									estado <= idle;
 								else
 									info <= "00000000";

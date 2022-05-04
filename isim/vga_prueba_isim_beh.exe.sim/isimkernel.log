@@ -2,9 +2,9 @@ Command line:
    vga_prueba_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  34543
+     -socket  37024
 
-Mon May  2 21:13:42 2022
+Wed May  4 02:08:29 2022
 
 
  Elaboration Time: 0.09 sec
@@ -20,9 +20,9 @@ Mon May  2 21:13:42 2022
  Total Traceable Variables  : 172
  Total Scalar Nets and Variables : 5111
 
- Total Simulation Time: 8.28 sec
+ Total Simulation Time: 8.08 sec
 
  Current Memory Usage: 277.484 Meg
 
-Mon May  2 21:16:12 2022
+Wed May  4 02:12:20 2022
 

@@ -6,19 +6,15 @@
      users do not edit the contents of this file. -->
 <messages>
 <msg type="warning" file="Route" num="455" delta="new" >CLK Net:<arg fmt="%s" index="1">Inst_vga/Inst_VGA_sync/clk_3</arg> may have excessive skew because 
-   <arg fmt="%d" index="2">4</arg> CLK pins and <arg fmt="%d" index="3">2</arg> NON_CLK pins failed to route using a CLK template.
-</msg>
-
-<msg type="warning" file="Route" num="455" delta="old" >CLK Net:<arg fmt="%s" index="1">Inst_UART/Inst_uart_rx/ocupado_bandera&lt;0&gt;</arg> may have excessive skew because 
-   <arg fmt="%d" index="2">0</arg> CLK pins and <arg fmt="%d" index="3">21</arg> NON_CLK pins failed to route using a CLK template.
-</msg>
-
-<msg type="warning" file="Route" num="455" delta="old" >CLK Net:<arg fmt="%s" index="1">Inst_vga/Inst_VGA_sync/h_sync</arg> may have excessive skew because 
-   <arg fmt="%d" index="2">4</arg> CLK pins and <arg fmt="%d" index="3">2</arg> NON_CLK pins failed to route using a CLK template.
-</msg>
-
-<msg type="warning" file="Route" num="455" delta="old" >CLK Net:<arg fmt="%s" index="1">Inst_vga/Inst_VGA_sync/clk_2</arg> may have excessive skew because 
    <arg fmt="%d" index="2">0</arg> CLK pins and <arg fmt="%d" index="3">2</arg> NON_CLK pins failed to route using a CLK template.
+</msg>
+
+<msg type="warning" file="Route" num="455" delta="new" >CLK Net:<arg fmt="%s" index="1">Inst_vga/Inst_VGA_sync/h_sync</arg> may have excessive skew because 
+   <arg fmt="%d" index="2">4</arg> CLK pins and <arg fmt="%d" index="3">2</arg> NON_CLK pins failed to route using a CLK template.
+</msg>
+
+<msg type="warning" file="Route" num="455" delta="new" >CLK Net:<arg fmt="%s" index="1">Inst_vga/Inst_VGA_sync/clk_2</arg> may have excessive skew because 
+   <arg fmt="%d" index="2">5</arg> CLK pins and <arg fmt="%d" index="3">2</arg> NON_CLK pins failed to route using a CLK template.
 </msg>
 
 </messages>

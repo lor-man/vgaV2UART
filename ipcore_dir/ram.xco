@@ -1,7 +1,7 @@
 ##############################################################
 #
 # Xilinx Core Generator version 14.7
-# Date: Mon May  2 22:09:53 2022
+# Date: Tue May  3 23:05:34 2022
 #
 ##############################################################
 #
@@ -46,7 +46,7 @@ CSET axi_id_width=4
 CSET axi_slave_type=Memory_Slave
 CSET axi_type=AXI4_Full
 CSET byte_size=9
-CSET coe_file=/home/ise/ise_vm/VGARAM/output.coe
+CSET coe_file=/home/ise/ise_vm/Redimension.coe
 CSET collision_warnings=ALL
 CSET component_name=ram
 CSET disable_collision_warnings=false
@@ -105,4 +105,4 @@ CSET write_width_b=8
 MISC pkg_timestamp=2012-11-19T16:22:25Z
 # END Extra information
 GENERATE
-# CRC: 4b71cd8a
+# CRC: 12e59bef

@@ -24,9 +24,9 @@ port(
 		en_tx: in std_logic;
 		datos_enviar: in std_logic_vector(7 downto 0);
 		RX_pin: in std_logic;
-		TX_pin: out std_logic;
+		TX_pin: out std_logic
 --ram opcional
-			ocupado_ram: out std_logic
+			--ocupado_ram: out std_logic
 );
  
 end General;
@@ -58,9 +58,10 @@ architecture Behavioral of General is
 --instanciacion generador de direcciones ram
 	COMPONENT generador_direccion
 	PORT(
+		clk12MHz_G : IN std_logic;
 		clkC : IN std_logic_vector(0 downto 0);          
 		addr_ram : OUT std_logic_vector(11 downto 0);
-		escritura : OUT std_logic
+		escritura : OUT std_logic_vector(0 downto 0)
 		);
 	END COMPONENT;
 --instanciacion de mux
@@ -91,7 +92,7 @@ architecture Behavioral of General is
 	END COMPONENT;
 --seales:
 signal clk0: std_logic;
-signal rx_ocupado: std_logic_vector (0 downto 0);
+signal rx_ocupado,ram_wr_in: std_logic_vector (0 downto 0);
 signal mux_ram_w,mux_ram_r,mux_ram_addr: std_logic_vector(11 downto 0);
 signal uart_rx_datos,rgb_datos_ram: std_logic_vector(7 downto 0);
 
@@ -111,16 +112,17 @@ begin
 --Instanciacion de ram
 ram0 : ram PORT MAP (
     clka => clk0,
-    wea => rx_ocupado,
+    wea => ram_wr_in,
     addra => mux_ram_addr,
     dina => uart_rx_datos ,
     douta => rgb_datos_ram
   );
 --Instanciacion de generador de direcciones ram
 	Inst_generador_direccion: generador_direccion PORT MAP(
+		clk12MHz_G =>clk0 ,
 		clkC => rx_ocupado,
 		addr_ram =>mux_ram_w ,
-		escritura => ocupado_ram
+		escritura =>ram_wr_in --ocupado_ram
 	);
 -- instanciacion de mux
 	Inst_mux_wr: mux_wr PORT MAP(
